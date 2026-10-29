@@ -1,0 +1,76 @@
+# Unit U4 (RiemannZeta/MatricesMobius) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U4"
+module_path: "RiemannZeta/MatricesMobius"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+rows:
+  - row: "L:RZ-41a"
+    theorems: ["RiemannZeta.MatricesMobius.rz_41a_hyperbolic_elliptic"]
+    status: "STATED"
+    note: "split leg of L:RZ-41, in scope (ledger E2): trace conditions at det 1, conjugation invariance, fixed-point counts for the Hyperbolic and Elliptic rows"
+  - row: "L:RZ-41b"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-41; V1-CC (±I have |tr| = 2 and fix every point; the printed Parabolic row and 'its elements classify into three types' fail at ±I); correction track (CC-16); no Lean statement, uncounted"
+  - row: "L:RZ-41c"
+    theorems: ["RiemannZeta.MatricesMobius.rz_41c_normal_forms"]
+    status: "STATED"
+    note: "split leg of L:RZ-41; OUT-OF-Q5 (pending the wall); SL(2, ℝ) normal forms of the action column"
+  - row: "L:RZ-43a"
+    theorems: ["RiemannZeta.MatricesMobius.rz_43a_elliptic_orders"]
+    status: "STATED"
+    note: "split leg of L:RZ-43, in scope; 43a and 43b together carry the L:RZ-43 figure"
+  - row: "L:RZ-43b"
+    theorems: ["RiemannZeta.MatricesMobius.rz_43b_orbifold_points"]
+    status: "STATED"
+    note: "split leg of L:RZ-43, IN SCOPE under L:RZ-43 (orchestrator placement ruling on V1's finding); cone angle := 2π/n and deficit := 2π − cone angle as definitions"
+  - row: "L:RZ-53a"
+    theorems: ["RiemannZeta.MatricesMobius.rz_53a_gaussMap_mapsTo", "RiemannZeta.MatricesMobius.rz_53a_hypLaplacian_eq"]
+    status: "STATED"
+    note: "split leg of L:RZ-53, in scope; the definitions (8.1)–(8.3) are the file's defs RZ.hypLaplacian, RZ.gaussMap (T 0 = 0), RZ.mayer (tsum); the second theorem is the spec's optional identity through mathlib's Laplacian"
+  - row: "L:RZ-53b"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-53; OUT-OF-Q5 (pending the wall), NEEDS-DEVELOPMENT: primitive hyperbolic conjugacy classes of PSL(2, ℤ) and their norm are not at the pin; the V1-signed shape has sorry-bodied defs (RZ.PrimHypClass, RZ.classNorm) that are not to be filled by sorry in a counted Challenge.lean, so no statement elaborates with the pin's objects; uncounted"
+  - row: "L:RZ-53c"
+    theorems: ["RiemannZeta.MatricesMobius.rz_53c_gauss_generates_cf", "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer"]
+    status: "STATED"
+    note: "split leg of L:RZ-53; OUT-OF-Q5 (pending the wall); transfer-operator weight |T′|^(−s) named as the reading; x = 0 excluded"
+  - row: "L:RZ-55"
+    theorems: ["RiemannZeta.MatricesMobius.rz_55_gauss_branches"]
+    status: "STATED"
+    note: "composition order R·(S·Tⁿ) fixed by the printed matrix; the spec's placeholder `(by sorry)` for det ≠ 0 inside clause (ii) written as `(by simp [Matrix.det_fin_two_of])`; clause (v) binder annotated `fun n : ℕ`"
+  - row: "L:RZ-63a"
+    theorems: ["RiemannZeta.MatricesMobius.rz_63a_sinh_identity"]
+    status: "STATED"
+    note: "split leg of L:RZ-63, in scope; ℓ := 2 log |λ|, σ the number 4 log φ; g_c = 1/(√5·π) written out, no def"
+  - row: "L:RZ-63b"
+    theorems: ["RiemannZeta.MatricesMobius.rz_63b_geometric"]
+    status: "STATED"
+    note: "split leg of L:RZ-63; OUT-OF-Q5 (pending the wall); inherits L:RZ-05 and L:RZ-06b; τ := inf_z d(z, γz) as a hypothesis (spec's shape); attainment conjunct mandatory (V1-GREEN after the drift)"
+  - row: "L:RZ-64a"
+    theorems: ["RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace"]
+    status: "STATED"
+    note: "split leg of L:RZ-64, in scope (E1 for the trace part); minimal trace read with |t|"
+  - row: "L:RZ-64b"
+    theorems: ["RiemannZeta.MatricesMobius.rz_64b_disc_Q_sqrt2"]
+    status: "STATED"
+    note: "split leg of L:RZ-64; OUT-OF-Q5 (pending the wall), rides L:RZ-13; the spec's instance binder [NumberField ℚ⟮√2⟯] is discharged by the file's instance numberField_Q_sqrt2, so the statement is unconditional"
+  - row: "L:RZ-64c"
+    theorems: ["RiemannZeta.MatricesMobius.rz_64c_conductor_one"]
+    status: "STATED"
+    note: "split leg of L:RZ-64; OUT-OF-Q5 (pending the wall), rides L:RZ-09; the spec's instance binder is discharged by numberField_Q_sqrt5, and the spec's (phiSq, hphiSq) binders are replaced by the constructed element RZ.phiSq : 𝓞 ℚ⟮√5⟯ (as the spec asks), its pinning hypothesis kept as the first conjunct"
+  - row: "L:RZ-83"
+    theorems: ["RiemannZeta.MatricesMobius.rz_83_hyperbolic_products"]
+    status: "STATED"
+    note: "group SL(2, ℤ); parabolic = mathlib's non-scalar Matrix.IsParabolic"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3"
+statement_sha256: "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3"
+v2_signed: "2026-10-28T17:50:42Z"

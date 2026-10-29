@@ -1,0 +1,42 @@
+# Unit U13 (ModularSurface/Accepted) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U13"
+module_path: "ModularSurface/Accepted"
+namespace: "ModularSurface.Accepted"
+paper: "The Invariant Structure of the Modular Surface (2026, revised October 2026)"
+pdf_sha256: "b4841489ec6bea619f8d5525ce4c788b86e0109e51d6e9d2cb252690f5b13af5"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+authority: "the wall's word 2, 2026-10-28 night words (priority/inbox/WORD-wall-2026-10-28-night-words.md): the NEW rows ACCEPTED as dispositioned"
+definitions:
+  - name: "ModularSurface.Accepted.fact_prime_five"
+    note: "instance Fact (Nat.Prime 5), restated byte-identically to RiemannZeta.LValue.fact_prime_five (LValue/Challenge.lean:26–28, docstring included); a Prop-valued instance; the two are equal by rfl (scratch check, BUILD-LOG)"
+  - name: "ModularSurface.Accepted.chi5"
+    note: "chi5 : DirichletCharacter ℂ 5, restated byte-identically to RiemannZeta.LValue.chi5 (LValue/Challenge.lean:30–35, docstring included; the binding definition, L:RZ-58b); ModularSurface.Accepted.chi5 = RiemannZeta.LValue.chi5 closes by rfl (scratch check, BUILD-LOG); a definition with a body, not a hole"
+  - name: "ModularSurface.Accepted.heckePeriodClosedForm"
+    note: "the right side of MS (5.2a), 5^{s/2} Γ(s/2)² ζ(s) L(s, χ₅) / (Γ(s) ζ(2s)), as a function ℂ → ℂ; new, from specs/MS-N2a.md §5 (docstring and body byte-identical); shared by L:MS-N2a and L:MS-N5a; not Hecke's formula (L:MS-N1, CITED)"
+rows:
+  - row: "L:MS-N2a"
+    theorems: ["ModularSurface.Accepted.ms_N2a_closedForm_vanishes"]
+    status: "STATED"
+    scope: "IN T (the wall's word 2, NOW-class widening)"
+    note: "split leg of NEW row L:MS-N2 (V1-SPLIT-OK; N2b CITED, inherits L:MS-N1); §5.2 after (5.2a) p19, echoes p02, p03, p21, p26; vanishing read as the limit 0 on the punctured neighbourhood (V1: the print's reading); V1-GREEN 2026-10-28T20:50:09Z"
+  - row: "L:MS-N3"
+    theorems: ["ModularSurface.Accepted.ms_N3_phi_from_systole"]
+    status: "STATED"
+    scope: "IN T (the wall's word 2, NOW-class widening)"
+    note: "NEW row; §3.1 after (3.5) p09 and §3.2 p11; both printed forms; L:MS-22's hypothesis form (systole = 4 log φ, the value L:MS-06 = L:RZ-06b not re-proved); V1-GREEN 2026-10-28T20:50:09Z"
+  - row: "L:MS-N5a"
+    theorems: ["ModularSurface.Accepted.ms_N5a_figure1_nodes"]
+    status: "STATED"
+    scope: "NEEDS-DEVELOPMENT by the wall's word 2 — stated and frozen, in T and uncounted"
+    note: "split leg of NEW row L:MS-N5 (V1-SPLIT-OK; N5b COMP, seat C); Figure 1 caption p19; nodes read as limits 0 of the closed form; conjunct (iii) on the printed window (0, 40]; V1-DRIFT 2026-10-28T20:50:09Z closed by the §6 declaration (M-amend 2026-10-28T20:53:08Z, statement unchanged); NOT in comparator.json theorem_names (frozen-unproved from the start)"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "d7307749fdb8fb24ff0e45f8b7550c163a2fb5af99f24fe7cf4857eedd1a63af"
+statement_sha256: "d7307749fdb8fb24ff0e45f8b7550c163a2fb5af99f24fe7cf4857eedd1a63af"
+v2_signed: "2026-10-28T22:53:46Z"
+statements_not_checked:
+  - "ModularSurface.Accepted.ms_N5a_figure1_nodes — NEEDS-DEVELOPMENT by the wall's word 2 (2026-10-28 night words): stated and frozen, uncounted; the declared gap: the \"further\" of \"the one further node\" (Figure 1 caption, p19), i.e. ζ(1/2)·L(1/2, χ₅) ≠ 0 — neither ζ(1/2) ≠ 0 nor L(1/2, χ₅) ≠ 0 is at the pin (specs/MS-N5a.md §6, M-amend 2026-10-28T20:53:08Z); left out of comparator.json theorem_names from the start"

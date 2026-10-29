@@ -1,0 +1,10 @@
+{
+    "challenge_module": "RiemannZeta.CorrectedReflections.Challenge",
+    "solution_module": "RiemannZeta.CorrectedReflections.Solution",
+    "theorem_names": [
+        "RiemannZeta.CorrectedReflections.rz_N2b_reflections_anti_automorphism",
+        "RiemannZeta.CorrectedReflections.rz_N2b_reflections_sign_up_to_order"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

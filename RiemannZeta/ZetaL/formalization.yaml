@@ -1,0 +1,75 @@
+# Unit U3 (RiemannZeta/ZetaL) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U3"
+module_path: "RiemannZeta/ZetaL"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.ZetaL.geometryConstant"
+    note: "g_c = 1/(√5·π); shared by L:RZ-15/16/17; a definition with a body, not a hole"
+  - name: "RiemannZeta.ZetaL.zetaChi"
+    note: "the standard χ(s) supplied by the L:RZ-33a spec (undefined in the served text; V1 ruling: definite enough)"
+  - name: "RiemannZeta.ZetaL.scatteringRatio"
+    note: "the paper's φ(s) := Λ(2s−1)/Λ(2s), Λ = completedRiemannZeta; shared by L:RZ-46a/47"
+  - name: "RiemannZeta.ZetaL.riemannXiRZ"
+    note: "local ξ(s) = s(s−1)/2·Λ(s); equals the paper's entire ξ only off {0, 1} (V1 note); used in L:RZ-46a (iii) as a meromorphic identity"
+rows:
+  - row: "L:RZ-15"
+    theorems: ["RiemannZeta.ZetaL.rz_15_geometryConstant_writings"]
+    status: "STATED"
+  - row: "L:RZ-16"
+    theorems: ["RiemannZeta.ZetaL.rz_16_geometryConstant_approx"]
+    status: "STATED"
+  - row: "L:RZ-17"
+    theorems: ["RiemannZeta.ZetaL.rz_17_quaternary_product"]
+    status: "STATED"
+  - row: "L:RZ-21"
+    theorems: ["RiemannZeta.ZetaL.rz_21_zeta_two_four"]
+    status: "STATED"
+  - row: "L:RZ-32a"
+    theorems: ["RiemannZeta.ZetaL.rz_32a_correction_q_form"]
+    status: "STATED"
+    note: "split leg of L:RZ-32; the q-rewriting of the correction series"
+  - row: "L:RZ-32b"
+    theorems: ["RiemannZeta.ZetaL.rz_32b_zeta_three_q_form"]
+    status: "STATED"
+    note: "split leg of L:RZ-32; OUT-OF-Q5, pending the wall; NEEDS-DEVELOPMENT (Ramanujan ζ(3), L:RZ-26); counted only if the wall admits it"
+  - row: "L:RZ-33a"
+    theorems: ["RiemannZeta.ZetaL.rz_33a_functional_equation"]
+    status: "STATED"
+    note: "split leg of L:RZ-33; χ supplied by the spec"
+  - row: "L:RZ-33b"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-33; V1-CC (fixed locus of s ↦ 1 − s is {1/2}); correction track; no Lean statement, uncounted"
+  - row: "L:RZ-34"
+    theorems: ["RiemannZeta.ZetaL.rz_34_euler_product"]
+    status: "STATED"
+    note: "domain 1 < Re s supplied by the spec (wording note)"
+  - row: "L:RZ-46a"
+    theorems: ["RiemannZeta.ZetaL.rz_46a_o_lambda_convention", "RiemannZeta.ZetaL.rz_46a_i_expansion", "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor"]
+    status: "STATED"
+  - row: "L:RZ-47"
+    theorems: ["RiemannZeta.ZetaL.rz_47_zero_gives_pole"]
+    status: "STATED"
+  - row: "L:RZ-49"
+    theorems: ["RiemannZeta.ZetaL.rz_49_norm_factor_eq_one"]
+    status: "STATED"
+  - row: "L:RZ-60"
+    theorems: ["RiemannZeta.ZetaL.rz_60_golden_identities"]
+    status: "STATED"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "7200988ea94a50a995e69adf8e7d44c480cd72423c24fd00da215bf1e9301a27"
+statement_sha256_superseded: "0e7e6ca90da4fd55d8162c8f4a7b6c46dd11fbf456d473288fc6a5b0d143fb63"
+superseded_by_repair: "2026-10-28"  # the signed statement_sha256 above; rz_46a_ii_iii_xi_factor gained (hs1 : s ≠ 1) per specs/_V3-U3.md; the fresh V2 re-signs the draft
+v2_signed_superseded: "2026-10-28T17:28:36Z"
+# re-signed after the rz_46a repair
+statement_sha256: "7200988ea94a50a995e69adf8e7d44c480cd72423c24fd00da215bf1e9301a27"
+v2_signed: "2026-10-28T17:57:38Z"
+statements_not_checked:
+  - "RiemannZeta.ZetaL.rz_32b_zeta_three_q_form — OUT-OF-Q5 (pending the wall), NEEDS-DEVELOPMENT; frozen in Challenge.lean under the V2 signature, absent from Solution.lean and from comparator.json theorem_names (CO 2026-10-28)"

@@ -1,0 +1,3284 @@
+{
+  "clock": "2026-10-28T21:36:22Z",
+  "commit": "c856d59",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lake_build_seconds": 9.18,
+  "checks": [
+    {
+      "check": "lake_build",
+      "status": "PASS",
+      "detail": "exit 0 in 9.18s at leanprover/lean4:v4.33.0 / mathlib db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    {
+      "check": "no_sorry_no_axiom",
+      "status": "PASS",
+      "detail": "24 .lean files scanned"
+    },
+    {
+      "check": "axioms",
+      "status": "PASS",
+      "detail": "10 Solution module(s), 382 theorem(s), all within {propext Classical.choice Quot.sound}"
+    },
+    {
+      "check": "comparator",
+      "status": "PASS",
+      "detail": "10 unit(s) okay (landrun: /Users/qriemannian/Claude/projects/comparator/scripts/fake-landrun.sh)"
+    },
+    {
+      "check": "challenge_digest",
+      "status": "PASS",
+      "detail": "10 Challenge.lean digest(s) equal the signed statement_sha256"
+    },
+    {
+      "check": "retired_names",
+      "status": "PASS",
+      "detail": "0 hits for the four retired names"
+    }
+  ],
+  "axioms": [
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14a_listed_in_negPellSet._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_25_productRelation_logCollapse",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_02_triangleFamily._proof_1_5",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_39_mayer_on_constant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_13_smallest_fundDisc._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_22_halfSystole",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_09b_fundamental_automorph._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_24b_geometryConstant_approx5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_02_triangleFamily",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.selbergNormOfTrace._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_12",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_05_fixedPoints_F2._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_15",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._proof_1_4",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14b_negPellSet_infinite",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_10",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_05_fixedPoints_F2._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14a_listed_in_negPellSet._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.geometryConstant._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14a_listed_in_negPellSet._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_02_triangleFamily._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms02InvOrder.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_09a_goldenRatio_sq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14a_listed_in_negPellSet._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14c_negPellSet_initial._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_13",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_6",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_02_triangleFamily._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_02_triangleFamily._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_8",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14b_negPellSet_infinite._proof_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_13_smallest_fundDisc",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_11",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_14",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms02Area._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_09b_fundamental_automorph._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._proof_1_7",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_03_heckeFamily",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.RZ.mayer._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14a_listed_in_negPellSet",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_05_fixedPoints_F2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_09b_fundamental_automorph",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_9",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_05_fixedPoints_F2._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_05_fixedPoints_F2._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14b_negPellSet_infinite._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14b_negPellSet_infinite._proof_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_32a_certificate_max_and_next_rung._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_14b_negPellSet_infinite._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ModularSurface.Now.Solution",
+      "theorem": "ModularSurface.Now.ms_07_selbergNorm_F2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic_GL",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_eigenvalues._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.fact_prime_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_61a_weight_approx",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_61b_factor_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_12_anchoring_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_06a_four_log_phi_approx",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.chi5._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_det_charpoly",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_eigenvalues",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_sq_eigenvalues._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_03_min_hyperbolic_abs_trace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_eigenvalues._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_sq_eigenvalues",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_03_min_hyperbolic_abs_trace._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_61c_weight_eq_two_L",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_06a_two_log_sq_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_04_fib_sq_eigenvalues._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Bridge.Solution",
+      "theorem": "RiemannZeta.Bridge.rz_61a_weight_chain",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71a_cyclotomic_completeness_legs12._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_units_cyclic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_65_gal_cyclotomic_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_3",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_degree_four_only_five._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_8",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_9",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_examples._simp_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._proof_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._proof_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_units_contain_quartic._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_units_contain_quartic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_leg3_selects_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_10",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_gal_seven_no_quartic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_degrees",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._proof_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71a_cyclotomic_completeness_legs12",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_examples._simp_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_4",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_6",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_cyclotomic_five_does_not_recur",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_quartic_layer_infinitely_often",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_degree_four_only_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_examples",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72a_units_cyclic._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_8",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_9",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Cyclotomic.Solution",
+      "theorem": "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm_eq_integral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_integral_gfun",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_LFunction_eq_tsum_bs",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm_eq_integral._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_gfun_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_term_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_hasSum_bterm_integral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_four_log_phi_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.rz_58a_LFunction_chi5_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_gfun_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_gfun_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_summable_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_term_eq._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_Q_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_term_zero_class",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_error_tendsto._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bs_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.rz_58c_value_approx",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_partial_sum_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_gk.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_chi5_apply",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_LFunction_eq_tsum_bs._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bs.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm._proof_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_partial_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm._proof_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_powg_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_error_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_LFunction_eq_tsum_bs._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm._proof_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm_eq_integral._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.rz_58b_chi5_kronecker",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_q_vals",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_LFunction_chi5_one_eq_tsum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_hasSum_bterm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_tendsto_tsum_bs",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bterm.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_hasDerivAt_Ffun",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_phi_lt_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_chi5_ne_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_diff_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.fact_prime_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_quad_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_bs_abs_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.chi5._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_error_tendsto._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.aux_LFunction_eq_tsum_bs._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.rz_58b_chi5_real_primitive_conductor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.LValue.Solution",
+      "theorem": "RiemannZeta.LValue.rz_58b_chi5_unique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_55_gauss_branches",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_11",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_16",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_55_gauss_branches._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_55_gauss_branches._simp_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_13",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64b_disc_Q_sqrt2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41a_hyperbolic_elliptic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._proof_1_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._abel_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace._proof_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.numberField_Q_sqrt2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_10",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53a_hypLaplacian_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_17",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41a_hyperbolic_elliptic._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_12",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_83_hyperbolic_products",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64c_conductor_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._proof_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53a_gaussMap_mapsTo",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_55_gauss_branches._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.mayer.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_55_gauss_branches._simp_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_7",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63b_geometric._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_7",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace._proof_1_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_10",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._proof_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_41c_normal_forms._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._abel_1_9",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_15",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_gauss_generates_cf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.mayer._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._abel_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.numberField_Q_sqrt5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_13",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_12",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_16",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._abel_1_9",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._simp_1_15",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_63a_sinh_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders._proof_1_14",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.RZ.phiSq._proof_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace._proof_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer._proof_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_11",
+      "axioms": []
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_14",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_43b_orbifold_points._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.MatricesMobius.Solution",
+      "theorem": "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace._proof_1_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_80_z2_grading_incompatible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2._simp_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_81_jacobi_forces_DEH_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.symmTraceless2.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2._abel_1_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2._abel_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.NoGo.Solution",
+      "theorem": "RiemannZeta.NoGo.rz_82a_cartan_sl2._abel_1_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat_rat_mul_pi_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_07a_golden_conj_products",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_02_fib_sq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_67_classNumber_cyclotomic_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_11_gaussSum_chi5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_7",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.chi5._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.fact_prime_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_8",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_66_discr_cyclotomic_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_02_fib_sq_mem_SL",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_07b_field_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_4",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_14b_gaussBonnet_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.orbEulerChar.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_3",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phi._proof_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._proof_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.F2._proof_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "NumberField.classNumber.congr_simp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_4",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "Complex.measurableEquivRealProd.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._proof_1_10",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.numberField_Q_sqrt5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._proof_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_6",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_7",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiUnit._proof_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_14b_vol_X1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiSq._proof_5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phi._proof_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants._proof_1_5",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_14a_area_fd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_06b_systole_at_F2._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_05_translation_length._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr._simp_1_9",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Provenance.Solution",
+      "theorem": "RiemannZeta.Provenance.RZ.phiUnit._proof_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_38_xp_trajectories",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.orbEulerChar.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.riemannXiRZ._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.bernoulliGF.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_76a_seven_eighths_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_77a_casimir_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_44a_orbifold_euler_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_o_lambda_convention",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_33a_functional_equation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_47_zero_gives_pole",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_60_golden_identities",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_15_geometryConstant_writings",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_16_geometryConstant_approx",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.geometryConstant._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_49_norm_factor_eq_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.zetaChi._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_34_euler_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_i_expansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_17_quaternary_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.scatteringRatio.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_21_zeta_two_four",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_9",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "challenge_digests": [
+    {
+      "unit": "./ModularSurface/Now",
+      "sha256": "648a9eecd38f30ab6be4905c53fee7d7f41e1fafb57930717037f44da308f2f2",
+      "signed": "648a9eecd38f30ab6be4905c53fee7d7f41e1fafb57930717037f44da308f2f2"
+    },
+    {
+      "unit": "./RiemannZeta/Bridge",
+      "sha256": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd",
+      "signed": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd"
+    },
+    {
+      "unit": "./RiemannZeta/Cyclotomic",
+      "sha256": "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc",
+      "signed": "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc"
+    },
+    {
+      "unit": "./RiemannZeta/LValue",
+      "sha256": "ed3c5e79b0c6f6fe2e369b48b75d6648bafaf23d86c5c8c0835764eb39481c7b",
+      "signed": "ed3c5e79b0c6f6fe2e369b48b75d6648bafaf23d86c5c8c0835764eb39481c7b"
+    },
+    {
+      "unit": "./RiemannZeta/MatricesMobius",
+      "sha256": "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3",
+      "signed": "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3"
+    },
+    {
+      "unit": "./RiemannZeta/NoGo",
+      "sha256": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2",
+      "signed": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2"
+    },
+    {
+      "unit": "./RiemannZeta/Pilot",
+      "sha256": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5",
+      "signed": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5"
+    },
+    {
+      "unit": "./RiemannZeta/Provenance",
+      "sha256": "b2552d657d053ceb2a70b04d60599f2f900fb2bd3df5c5d9d16cf32094871d48",
+      "signed": "b2552d657d053ceb2a70b04d60599f2f900fb2bd3df5c5d9d16cf32094871d48"
+    },
+    {
+      "unit": "./RiemannZeta/SmallArith",
+      "sha256": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f",
+      "signed": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f"
+    },
+    {
+      "unit": "./RiemannZeta/ZetaL",
+      "sha256": "7200988ea94a50a995e69adf8e7d44c480cd72423c24fd00da215bf1e9301a27",
+      "signed": "7200988ea94a50a995e69adf8e7d44c480cd72423c24fd00da215bf1e9301a27"
+    }
+  ],
+  "file_hashes": {
+    "./LeanPapers.lean": "78d5c53cf4163fc379c47a0e62465fb85829b999ea431e40069709ed6d496aed",
+    "./LeanPapers/Basic.lean": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4",
+    "./ModularSurface.lean": "65fc47a3971cc67d416572ba626c249e02aa348d7fe910b651e144a1799df72c",
+    "./ModularSurface/Now/Challenge.lean": "648a9eecd38f30ab6be4905c53fee7d7f41e1fafb57930717037f44da308f2f2",
+    "./ModularSurface/Now/Solution.lean": "f7eff0776a46032100ec9071f808fc919465c10d97e64e02f278d1acdb626e0f",
+    "./ModularSurface/Now/comparator.json": "453c1f7e7b13cdc248224b5233ac1472bebdbe980b88f567f5e37f8bae0b7b38",
+    "./ModularSurface/Now/formalization.yaml": "c5f057458ea5efd543dd5281a6fef20914be7c24b846733592948aedb720e712",
+    "./RiemannZeta.lean": "7d2f046bb777214d25bae6ede70b8d1bd70f1c63f90e6ed0b91096e85b4d779c",
+    "./RiemannZeta/Bridge/Challenge.lean": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd",
+    "./RiemannZeta/Bridge/Solution.lean": "76a497bd180776b03af092c2ff106e60f7804c4056c26469b6a9c73375d78bf7",
+    "./RiemannZeta/Bridge/comparator.json": "86490d311430268142ced8651db28e1970955c0ada8284decb0a5b89d6ee72ba",
+    "./RiemannZeta/Bridge/formalization.yaml": "fe1a153670ea239df3e5fd8c98f4b8bb942dd4fb77a2f7c180466e5349fc3310",
+    "./RiemannZeta/Cyclotomic/Challenge.lean": "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc",
+    "./RiemannZeta/Cyclotomic/Solution.lean": "04fe735d39e88146a6401a01fe153c7d3e0bd6e4407284c2acd662211d06ba63",
+    "./RiemannZeta/Cyclotomic/comparator.json": "f3242a34d5d03f0817fde0a65fd7d6df2fb3fc047c2fd4685b3c3d7035cb15be",
+    "./RiemannZeta/Cyclotomic/formalization.yaml": "82388c16c2a581de786d141a0e68c0390f40889c42af513081b5625275762e6b",
+    "./RiemannZeta/LValue/Challenge.lean": "ed3c5e79b0c6f6fe2e369b48b75d6648bafaf23d86c5c8c0835764eb39481c7b",
+    "./RiemannZeta/LValue/Solution.lean": "9847c4c5df5eeb60d597c593c214fb7781fdaeed9c1d6727df62a648ec9762b7",
+    "./RiemannZeta/LValue/comparator.json": "d301b80abb14d3cf2f91cffb4c526900754a854cd17f6144ec80ef789d2ed8fa",
+    "./RiemannZeta/LValue/formalization.yaml": "61048e67807caac61899922f765cb31ac891d96b9daf184a5f63d17753da7f6b",
+    "./RiemannZeta/MatricesMobius/Challenge.lean": "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3",
+    "./RiemannZeta/MatricesMobius/Solution.lean": "e7bfa77a2d67903616960dfe45edc46739e3ad4c49a883afde10131d762122e3",
+    "./RiemannZeta/MatricesMobius/comparator.json": "ad6212af0ff03c94b10a3e4349bd879b10cd6c0c5cfd72ebc0a76b2d3c9e5678",
+    "./RiemannZeta/MatricesMobius/formalization.yaml": "77b9fd8c97d94c2a8fc3bc75797451f1b2f2f37d171760314e215decdbca639e",
+    "./RiemannZeta/NoGo/Challenge.lean": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2",
+    "./RiemannZeta/NoGo/Solution.lean": "a049be3273299c7e31dac031c7f3108a46baea9d1f88e7e550d4a58ab76525b8",
+    "./RiemannZeta/NoGo/comparator.json": "f210b5266d223e24cb88e3ca4622f6833321ca4651207ff549f7d346a573d5d8",
+    "./RiemannZeta/NoGo/formalization.yaml": "14ef82650764e3abdabf442a7d957dbea57214795958999c362df3477a7a037a",
+    "./RiemannZeta/Pilot/Challenge.lean": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5",
+    "./RiemannZeta/Pilot/Solution.lean": "ffc23b5e557ba47b98c943e02d8823b021cd8b0b2440b28311ceaa4a968bcc7e",
+    "./RiemannZeta/Pilot/comparator.json": "c5dfbde252a41eb3ae60020486ed58793cbce0c75dbb84bbfb7bcfc64cfab094",
+    "./RiemannZeta/Pilot/formalization.yaml": "997cdb77df09a6ec877aa39be2112d9abd364aa27cde270b360f3c5bdf1dcf15",
+    "./RiemannZeta/Provenance/Challenge.lean": "b2552d657d053ceb2a70b04d60599f2f900fb2bd3df5c5d9d16cf32094871d48",
+    "./RiemannZeta/Provenance/Solution.lean": "1c386dc787bedae104aec9e4a84f8267aef0ce5608ad5d4f3467e149fa10fd32",
+    "./RiemannZeta/Provenance/comparator.json": "6848a5c520bb1480ac96d38fd66dae78e5d25824c1196e503e4ecb27dc2d5fa8",
+    "./RiemannZeta/Provenance/formalization.yaml": "fd3357637dc94761db1fa137cb39a92271a10c176721843c8f82d81deb2e8418",
+    "./RiemannZeta/SmallArith/Challenge.lean": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f",
+    "./RiemannZeta/SmallArith/Solution.lean": "f64d9dcda951d3d2e6fced5fe32a62be1f174b39c485aab019a5ddd4e8eaa8a3",
+    "./RiemannZeta/SmallArith/comparator.json": "0aec01dc2c3fa0f7a91e76060829dbb1d0acde0d5f09ed0a4cf59372566ff545",
+    "./RiemannZeta/SmallArith/formalization.yaml": "9a5a76e8ec329aa82abc8138410d92b97f44ccaacbb88795a2290abe1fa0e360",
+    "./RiemannZeta/ZetaL/Challenge.lean": "7200988ea94a50a995e69adf8e7d44c480cd72423c24fd00da215bf1e9301a27",
+    "./RiemannZeta/ZetaL/Solution.lean": "cb84523f6ab59f77ff2e13bb0dd7a4036a9d868a184618d21a958d61b1dad64a",
+    "./RiemannZeta/ZetaL/comparator.json": "e190406b3e67d61e8772711ade9c1984829007279de36d1d09a8b2068b1840de",
+    "./RiemannZeta/ZetaL/formalization.yaml": "78f00b4f2edc9e8b3b8c5b57409195f514f33dfba93c8eb09d3f01be669021f7",
+    "./formalization.yaml": "12dbc328b6b96a19eb37813f68dacbe81072d1f4879d2a139062a00437a50e82",
+    "./lake-manifest.json": "a070fb158b90dcb56d035723ccdf536e4bed7a12379cf94ff1edf22fee6f9bcc",
+    "./lakefile.toml": "482c52d09ab31a1d47aee87fae2ab356a6e19b8665e94cf5d108fff7ba1d6074",
+    "./lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "./tools/check.sh": "8efc2de6dea8e627ee40bd422094e5fb5636157057f1f0e43d4d278cd541f04f",
+    "./tools/env.sh": "9c02acd5b4fbb0d5eed300be89e433f736081b175f3eed3db2186470656d050e"
+  },
+  "verdict": "PASS"
+}

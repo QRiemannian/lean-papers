@@ -1,0 +1,21 @@
+{
+    "challenge_module": "RiemannZeta.Cyclotomic.Challenge",
+    "solution_module": "RiemannZeta.Cyclotomic.Solution",
+    "theorem_names": [
+        "RiemannZeta.Cyclotomic.rz_65_gal_cyclotomic_five",
+        "RiemannZeta.Cyclotomic.rz_71a_cyclotomic_completeness_legs12",
+        "RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield",
+        "RiemannZeta.Cyclotomic.rz_71b_leg3_selects_five",
+        "RiemannZeta.Cyclotomic.rz_72a_degrees",
+        "RiemannZeta.Cyclotomic.rz_72a_gal_seven_no_quartic",
+        "RiemannZeta.Cyclotomic.rz_72a_units_cyclic",
+        "RiemannZeta.Cyclotomic.rz_72a_units_contain_quartic",
+        "RiemannZeta.Cyclotomic.rz_72a_examples",
+        "RiemannZeta.Cyclotomic.rz_72a_quartic_layer_infinitely_often",
+        "RiemannZeta.Cyclotomic.rz_72a_degree_four_only_five",
+        "RiemannZeta.Cyclotomic.rz_72a_cyclotomic_five_does_not_recur",
+        "RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

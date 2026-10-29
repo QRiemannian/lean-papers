@@ -1,0 +1,532 @@
+{
+  "clock": "2026-10-28T17:35:37Z",
+  "commit": "631fb0a",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lake_build_seconds": 19.05,
+  "checks": [
+    {
+      "check": "lake_build",
+      "status": "PASS",
+      "detail": "exit 0 in 19.05s at leanprover/lean4:v4.33.0 / mathlib db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    {
+      "check": "no_sorry_no_axiom",
+      "status": "FAIL",
+      "detail": "sorry/admit outside Challenge.lean: 1; axiom declarations: 0"
+    },
+    {
+      "check": "axioms",
+      "status": "FAIL",
+      "detail": "3 Solution module(s), 53 theorem(s), 0 outside {propext Classical.choice Quot.sound}, runner failures: 1"
+    },
+    {
+      "check": "comparator",
+      "status": "FAIL",
+      "detail": "a unit lacks comparator.json or Comparator did not return okay"
+    },
+    {
+      "check": "challenge_digest",
+      "status": "PASS",
+      "detail": "4 Challenge.lean digest(s) equal the signed statement_sha256"
+    },
+    {
+      "check": "retired_names",
+      "status": "FAIL",
+      "detail": "3 hit(s) for retired names"
+    }
+  ],
+  "axioms": [
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat_rat_mul_pi_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_07a_golden_conj_products",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_02_fib_sq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_67_classNumber_cyclotomic_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_11_gaussSum_chi5",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_7",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.chi5._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.fact_prime_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_8",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_66_discr_cyclotomic_five",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero._proof_1_1",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_02_fib_sq_mem_SL",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_07b_field_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.Pilot.Solution",
+      "theorem": "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_o_lambda_convention",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_33a_functional_equation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_47_zero_gives_pole",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_60_golden_identities",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_15_geometryConstant_writings",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_16_geometryConstant_approx",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.geometryConstant._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_5",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_49_norm_factor_eq_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_6",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.zetaChi._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_34_euler_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_i_expansion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_17_quaternary_product",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.scatteringRatio.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_7",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_2",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor._simp_1_6",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_3",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_21_zeta_two_four",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_8",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.ZetaL.Solution",
+      "theorem": "RiemannZeta.ZetaL.rz_32a_correction_q_form._simp_1_9",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "challenge_digests": [
+    {
+      "unit": "./RiemannZeta/Bridge",
+      "sha256": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd",
+      "signed": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd"
+    },
+    {
+      "unit": "./RiemannZeta/NoGo",
+      "sha256": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2",
+      "signed": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2"
+    },
+    {
+      "unit": "./RiemannZeta/Pilot",
+      "sha256": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5",
+      "signed": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5"
+    },
+    {
+      "unit": "./RiemannZeta/ZetaL",
+      "sha256": "0e7e6ca90da4fd55d8162c8f4a7b6c46dd11fbf456d473288fc6a5b0d143fb63",
+      "signed": "0e7e6ca90da4fd55d8162c8f4a7b6c46dd11fbf456d473288fc6a5b0d143fb63"
+    }
+  ],
+  "file_hashes": {
+    "./LeanPapers.lean": "78d5c53cf4163fc379c47a0e62465fb85829b999ea431e40069709ed6d496aed",
+    "./LeanPapers/Basic.lean": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4",
+    "./ModularSurface.lean": "048d59c735dcb47e355a6f9c4967b0cdb5e23edc425a38006140084f617e407c",
+    "./RiemannZeta.lean": "06fc865db7968a398822ed5db9a9e716ff42bd1a94e0ad01a16fd31079c449c7",
+    "./RiemannZeta/Bridge/Challenge.lean": "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd",
+    "./RiemannZeta/Bridge/Solution.lean": "c0bab8368ff86c7253a34ae563765b1f191d216ab1ee591e3ecebb48c5354597",
+    "./RiemannZeta/Bridge/comparator.json": "30d1bed6398a71443b391d5cbdc7e5e2cc130179767bd3fbf9329b456d9d7b92",
+    "./RiemannZeta/Bridge/formalization.yaml": "c60989216f214c1d4b4e770467ad1af918193232a39335604cb17caed48c7c37",
+    "./RiemannZeta/Cyclotomic/Challenge.lean": "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc",
+    "./RiemannZeta/Cyclotomic/comparator.json": "f3242a34d5d03f0817fde0a65fd7d6df2fb3fc047c2fd4685b3c3d7035cb15be",
+    "./RiemannZeta/Cyclotomic/formalization.yaml": "2a5dece52bd87d5b6b4c08a728a431e8e2d6e9889427e01df7facf1a03f617c5",
+    "./RiemannZeta/MatricesMobius/Challenge.lean": "1c601bd63ea93301f450446df765848f850760b6c1aeecea90bd89d752570ff3",
+    "./RiemannZeta/NoGo/Challenge.lean": "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2",
+    "./RiemannZeta/NoGo/Solution.lean": "a70e0a08c099b508a218b72769973c9429c0328b3bfb5667cc815984ebe2402d",
+    "./RiemannZeta/NoGo/comparator.json": "29184520cf810fe5f44e149ee111206abb4b52675b2148cb711eb4583cd80069",
+    "./RiemannZeta/NoGo/formalization.yaml": "c81c9ab15d48c4bda1343e9e2e5c9f438eadc30c1827f2f58bf1dbc1a187aeeb",
+    "./RiemannZeta/Pilot/Challenge.lean": "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5",
+    "./RiemannZeta/Pilot/Solution.lean": "ffc23b5e557ba47b98c943e02d8823b021cd8b0b2440b28311ceaa4a968bcc7e",
+    "./RiemannZeta/Pilot/comparator.json": "c5dfbde252a41eb3ae60020486ed58793cbce0c75dbb84bbfb7bcfc64cfab094",
+    "./RiemannZeta/Pilot/formalization.yaml": "997cdb77df09a6ec877aa39be2112d9abd364aa27cde270b360f3c5bdf1dcf15",
+    "./RiemannZeta/SmallArith/Challenge.lean": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f",
+    "./RiemannZeta/SmallArith/comparator.json": "0aec01dc2c3fa0f7a91e76060829dbb1d0acde0d5f09ed0a4cf59372566ff545",
+    "./RiemannZeta/SmallArith/formalization.yaml": "abffb4839b5e0452fc8f44c37609d8dfdd1e23600423d6215513b0d8e6bceaed",
+    "./RiemannZeta/ZetaL/Challenge.lean": "0e7e6ca90da4fd55d8162c8f4a7b6c46dd11fbf456d473288fc6a5b0d143fb63",
+    "./RiemannZeta/ZetaL/Solution.lean": "4e6a1c47e4e54b28d4bbe6ddfafaca23d843e737b99ca43af0a3d654036f9534",
+    "./RiemannZeta/ZetaL/comparator.json": "e190406b3e67d61e8772711ade9c1984829007279de36d1d09a8b2068b1840de",
+    "./RiemannZeta/ZetaL/formalization.yaml": "3abe01a28ebee3ce776fd89c0845a340070aa85665bff77075d7cda1964c53d7",
+    "./formalization.yaml": "12dbc328b6b96a19eb37813f68dacbe81072d1f4879d2a139062a00437a50e82",
+    "./lake-manifest.json": "a070fb158b90dcb56d035723ccdf536e4bed7a12379cf94ff1edf22fee6f9bcc",
+    "./lakefile.toml": "482c52d09ab31a1d47aee87fae2ab356a6e19b8665e94cf5d108fff7ba1d6074",
+    "./lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "./tools/check.sh": "fd06f3e761059a4d569f5adab9c882257381c9bbf4df8e482f6a8d8646a7cf89",
+    "./tools/env.sh": "9c02acd5b4fbb0d5eed300be89e433f736081b175f3eed3db2186470656d050e"
+  },
+  "verdict": "FAIL"
+}

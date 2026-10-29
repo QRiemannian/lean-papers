@@ -1,0 +1,10 @@
+{
+    "challenge_module": "RiemannZeta.Corrected.Challenge",
+    "solution_module": "RiemannZeta.Corrected.Solution",
+    "theorem_names": [
+        "RiemannZeta.Corrected.rz_33b_reflection_fixed_point",
+        "RiemannZeta.Corrected.rz_41b_noncentral_trichotomy"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

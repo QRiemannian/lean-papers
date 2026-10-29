@@ -1,0 +1,54 @@
+# pinned output -- MS-35 implementation B
+# started (date -u): 2026-10-28T20:36:11Z
+# interpreter: /opt/homebrew/bin/python3 -I (3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)])
+# command (from inside this folder): /opt/homebrew/bin/python3 -I compute.py
+# compute.py sha256: 29838db4c763fbfb19d45dfe7ada809001a40e79d83b57d0809d86dfac0513fb
+
+MS-35 implementation B (Mayer transfer operator, Fredholm determinants on Re s = 1/2)
+python 3.14.4, mpmath 1.3.0
+
+scan det(1+L_s) [odd]: local minima of |det| on the line at r = ['2.7', '9.5', '12.2']
+scan det(1-L_s) [even]: local minima of |det| on the line at r = ['2.7', '7.1', '10.5', '12.5']
+  (scan: K = 40, dps 30, step 0.1; 52 s so far)
+
+  det(1+L_s) [odd] from r = 2.7:
+     K = 60: s = (-7.0 - 4.687150372555330187556e-27j)   |det| = 0
+     K = 80: s = (-7.0 - 4.687150372496876922174e-27j)   |det| = 0   |s_60 - s_80| = 6.1e-38   -> secant left the line's neighbourhood: no zero at this shallow minimum
+  det(1+L_s) [odd] from r = 9.5:
+     K = 60: s = (0.4999999999999999999832 + 9.533695261353557554358j)   |det| = 5.2e-40
+     K = 80: s = (0.5 + 9.533695261353557554344j)   |det| = 3.4e-45   |s_60 - s_80| = 2.1e-20   -> CUSP FORM (Re s = 1/2)
+  det(1+L_s) [odd] from r = 12.2:
+     K = 60: s = (0.5000000000000000312048 + 12.17300832467967833482j)   |det| = 5.5e-30
+     K = 80: s = (0.5 + 12.17300832467967784953j)   |det| = 3.0e-42   |s_60 - s_80| = 4.9e-16   -> CUSP FORM (Re s = 1/2)
+  det(1-L_s) [even] from r = 2.7:
+     K = 60: s = (-21348268847572.4216131 - 63992136435473.18322599j)   |det| = 0
+     K = 80: s = (-21348268847559.0533594 - 63992136435464.95627798j)   |det| = 0   |s_60 - s_80| = 16.0   -> secant left the line's neighbourhood: no zero at this shallow minimum
+  det(1-L_s) [even] from r = 7.1:
+     K = 60: s = (0.25 + 7.067362570867346895229j)   |det| = 5.3e-48
+     K = 80: s = (0.25 + 7.067362570867346895229j)   |det| = 2.6e-47   |s_60 - s_80| = 2.2e-24   -> resonance (Re s = 1/4)
+  det(1-L_s) [even] from r = 10.5:
+     K = 60: s = (0.2500000000000000010596 + 10.51101981938577749776j)   |det| = 8.4e-36
+     K = 80: s = (0.25 + 10.51101981938577749631j)   |det| = 5.5e-44   |s_60 - s_80| = 1.8e-18   -> resonance (Re s = 1/4)
+  det(1-L_s) [even] from r = 12.5:
+     K = 60: s = (0.2500000000000006304472 + 12.5054287900728465698j)   |det| = 5.9e-30
+     K = 80: s = (0.25 + 12.50542879007284438161j)   |det| = 1.2e-41   |s_60 - s_80| = 2.3e-15   -> resonance (Re s = 1/4)
+  (271 s so far)
+
+argument principle, det(1+L_s) [odd], zeros in 0.4 <= Re s <= 0.6, 0.5 <= Im s <= 12.6: 2.0
+argument principle, det(1-L_s) [even], zeros in 0.4 <= Re s <= 0.6, 0.5 <= Im s <= 12.6: -1.56939e-32
+  cusp-form zeros found by scan + refinement: 2; counted by the argument principle: 2 -> complete
+
+Cusp-form parameters with r <= 12.6 (ascending):
+  r_1 = 9.5336952613535575543   (det(1+L_s) [odd]; lambda = 1/4 + r^2 = 91.1413453363553; K=60 vs K=80 differ by 2.1e-20)
+  r_2 = 12.17300832467967785   (det(1+L_s) [odd]; lambda = 1/4 + r^2 = 148.432131672721; K=60 vs K=80 differ by 4.9e-16)
+
+Comparison with the printed numerals (rule: round half-even at the printed last place):
+  r_1  printed   9.5337   computed 9.533695261353558   rounded 9.5337   PASS
+  r_2  printed   12.173   computed 12.17300832467968   rounded 12.173   PASS
+  convergence (K = 60 vs 80 agree to 1e-10 on r_1, r_2): OK
+
+runtime 281 s
+ROW VERDICT: PASS
+
+# finished (date -u): 2026-10-28T20:40:52Z
+# wall-clock (/usr/bin/time -p real): 281.21 s

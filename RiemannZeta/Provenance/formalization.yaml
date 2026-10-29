@@ -1,0 +1,70 @@
+# Unit U9 (RiemannZeta/Provenance) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U9"
+module_path: "RiemannZeta/Provenance"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+rows:
+  - row: "L:RZ-14a"
+    theorems: ["RiemannZeta.Provenance.rz_14a_area_fd"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "the ledger's a-leg of L:RZ-14: the hyperbolic area (mathlib's volume on ℍ, dx dy / y²) of ModularGroup.fd is ENNReal.ofReal (π/3); that it is vol(X(1)) is L:RZ-14b"
+  - row: "L:RZ-05"
+    theorems: ["RiemannZeta.Provenance.rz_05_translation_length"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "ℓ = 2 log |λ| for 1 < |λ|, λ a real eigenvalue of a hyperbolic γ ∈ SL(2, ℝ); τ := inf_z d(z, γz) as a hypothesis in U4's form; carried in substance by rz_63b_geometric conj. 1 (U4), the delta states the whole printed formula on its own"
+  - row: "L:RZ-06b"
+    theorems: ["RiemannZeta.Provenance.rz_06b_systole_at_F2"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "τ(F²) = 2 log(φ²) and IsLeast at F² over hyperbolic elements of SL(2, ℤ); F² is the file's def RZ.F2; value and attainment carried by rz_63b_geometric conj. 2–3 (U4); 2 log(φ²) = 4 log φ ≈ 1.9248 by L:RZ-06a"
+  - row: "L:RZ-09"
+    theorems: ["RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "five clauses (𝓞 = ℤ[φ], d_K = 5, h_K = 1, fundamental unit φ as generator of the units modulo ±1 with φ > 1, field norm N(φ) = −1); no clause CITED; (a), (b) carried in substance by rz_64c_conductor_one (U4); the spec's elided bodies of RZ.phi (U4's RZ.phiSq construction at exponent 1) and RZ.phiUnit (inverse φ − 1) are written out with proofs; carries L:RZ-10"
+  - row: "L:RZ-13"
+    theorems: ["RiemannZeta.Provenance.rz_13_min_real_quadratic_discr"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "field form: every totally real K of degree 2 has 5 ≤ discr K, attained at ℚ(√5); the ∀ over K : Type u inside the conjunction elaborates as the spec writes it (theorem universe parameter .{u}); NEEDS-DEVELOPMENT for the proof (exclude d_K = 4); the integer form is ms_13_smallest_fundDisc (U8)"
+  - row: "L:RZ-14b"
+    theorems: ["RiemannZeta.Provenance.rz_14b_vol_X1", "RiemannZeta.Provenance.rz_14b_gaussBonnet_value"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word"
+    note: "split (V1-SPLIT-OK): (i) 𝒟 is a fundamental domain for RZ.modularPGL (the image of SL(2, ℤ) in PGL(2, ℝ)) and its covolume is π/3; (ii-arith) χ(0; 2, 3; 1) = −1/6 and −2π·χ = π/3 on orbEulerChar restated from U7; the L:RZ-15 hypothesis discharges through (covolume …).toReal = π/3 (ENNReal.toReal_ofReal)"
+    cited:
+      - leg: "L:RZ-14b (ii-thm)"
+        status: "CITED, NOT CHECKED"
+        what: "the orbifold Gauss–Bonnet theorem (area = −2π·χ_orb for a finite-area hyperbolic 2-orbifold), applied to X(1) with signature (0; 2, 3; 1): genus 0, cone points of orders 2 and 3, one cusp"
+        reason: "no orbifolds and no Gauss–Bonnet for surfaces with cone points or cusps at the pin (E4); no theorem in Challenge.lean"
+shared_declarations:
+  - name: "numberField_Q_sqrt5"
+    restated_from: "RiemannZeta/MatricesMobius/Challenge.lean (U4)"
+    form: "byte-identical (docstring and body)"
+  - name: "RZ.phiSq"
+    restated_from: "RiemannZeta/MatricesMobius/Challenge.lean (U4)"
+    form: "byte-identical (docstring and body)"
+  - name: "orbEulerChar"
+    restated_from: "RiemannZeta/SmallArith/Challenge.lean (U7)"
+    form: "byte-identical (docstring and body)"
+  - name: "RZ.F2"
+    restated_from: "new (spec RZ-06b)"
+  - name: "RZ.phi"
+    restated_from: "new (spec RZ-09; U4's RZ.phiSq construction at exponent 1)"
+  - name: "RZ.phiUnit"
+    restated_from: "new (spec RZ-09)"
+  - name: "RZ.modularPGL"
+    restated_from: "new (spec RZ-14b)"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "b2552d657d053ceb2a70b04d60599f2f900fb2bd3df5c5d9d16cf32094871d48"
+statement_sha256: "b2552d657d053ceb2a70b04d60599f2f900fb2bd3df5c5d9d16cf32094871d48"
+v2_signed: "2026-10-28T21:03:10Z"

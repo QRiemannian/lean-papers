@@ -1,0 +1,47 @@
+# Unit U1 (RiemannZeta/Pilot) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U1"
+module_path: "RiemannZeta/Pilot"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+rows:
+  - row: "L:RZ-02"
+    theorems: ["RiemannZeta.Pilot.rz_02_fib_sq", "RiemannZeta.Pilot.rz_02_fib_sq_mem_SL"]
+    status: "STATED"
+  - row: "L:RZ-07a"
+    theorems: ["RiemannZeta.Pilot.rz_07a_golden_conj_products"]
+    status: "STATED"
+    note: "split leg of L:RZ-07; the conjugate products of (2.4)"
+  - row: "L:RZ-07b"
+    theorems: ["RiemannZeta.Pilot.rz_07b_field_norm"]
+    status: "STATED"
+    note: "split leg of L:RZ-07; OUT-OF-Q5, pending the wall; counted only if the wall admits it"
+  - row: "L:RZ-11"
+    theorems: ["RiemannZeta.Pilot.rz_11_gaussSum_chi5"]
+    status: "STATED"
+  - row: "L:RZ-20a"
+    theorems: ["RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat", "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat_rat_mul_pi_pow"]
+    status: "STATED"
+    note: "split leg of L:RZ-20"
+  - row: "L:RZ-20b"
+    theorems: []
+    status: "CONCEPT"
+    note: "split leg of L:RZ-20; no Lean statement, uncounted"
+  - row: "L:RZ-23"
+    theorems: ["RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero"]
+    status: "STATED"
+  - row: "L:RZ-66"
+    theorems: ["RiemannZeta.Pilot.rz_66_discr_cyclotomic_five"]
+    status: "STATED"
+  - row: "L:RZ-67"
+    theorems: ["RiemannZeta.Pilot.rz_67_classNumber_cyclotomic_five"]
+    status: "STATED"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5"
+statement_sha256: "f0c3f600f6fe0af809c5f618f3ed340d5d6f029f57891f1836cf9b05ce58f1e5"
+v2_signed: "2026-10-28T17:25:16Z"

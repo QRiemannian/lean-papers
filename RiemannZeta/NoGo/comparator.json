@@ -1,0 +1,15 @@
+{
+  "challenge_module": "RiemannZeta.NoGo.Challenge",
+  "solution_module": "RiemannZeta.NoGo.Solution",
+  "theorem_names": [
+    "RiemannZeta.NoGo.rz_80_z2_grading_incompatible",
+    "RiemannZeta.NoGo.rz_81_jacobi_forces_DEH_zero",
+    "RiemannZeta.NoGo.rz_82a_cartan_sl2"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

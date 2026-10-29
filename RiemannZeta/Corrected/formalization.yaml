@@ -1,0 +1,33 @@
+# Unit U11 (RiemannZeta/Corrected) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U11"
+module_path: "RiemannZeta/Corrected"
+namespace: "RiemannZeta.Corrected"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "6b89ce0e7ae0a71301a8d792b6e80f4cb850244df83f4731810377d70e3d2d12"
+pdf_note: "the corrected edition, SERVED since 2026-10-29 18:02Z (republish; JC-9 event 25 (first written 24 at 3d60621; renumbered 2026-10-29)); both legs formalize the CORRECTED edition (correction draft sha256 1b2af75cc5975dea65088d6742aa55ef422afd9f5b0dedf0cf572c88af04c4e2 at the M and V1 reads; pass 2 is 8346ab41), not yet served — the republish waits on the wall's read of CORRECTION-WAVE-2026-10-28, and the corrected edition's sha256 replaces pdf_sha256 and the docstrings' prefix at the republish"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.Corrected.zetaChi"
+    note: "restated byte-identically (docstring and body) from RiemannZeta.ZetaL.zetaChi (ZetaL/Challenge.lean:26–30), a provenance comment above; RiemannZeta.ZetaL.zetaChi = RiemannZeta.Corrected.zetaChi closes by rfl (scratch check, BUILD-LOG); the χ the corrected edition prints beside (5.2); the U10 decision-2 pattern; a definition with a body, not a hole"
+rows:
+  - row: "L:RZ-33b"
+    theorems: ["RiemannZeta.Corrected.rz_33b_reflection_fixed_point"]
+    status: "STATED"
+    gate: "the flip waits on the wall's read of CORRECTION-WAVE-2026-10-28"
+    scope: "corrected leg of L:RZ-33 (CC-15, §5.4 p14), built 2026-10-28 by the wall's word (night words, lane 1); class E1"
+    note: "spec specs/RZ-33b.md, the M-amend section (22:56:18Z; V1-GREEN 22:58:43Z on re-read, against the correction draft 1b2af75c); (0) off ℤ, χ(s)χ(1 − s) = 1 and (5.2) at s and at 1 − s; (i) s ↦ 1 − s involutive with fixed-point set {1/2}; (ii-a) fixedPoints (1 − conj ·) = the line Re s = 1/2; (ii-b) non-trivial zeros (ρ ≠ −2(n+1)) to non-trivial zeros, never the whole zero set; sibling L:RZ-33a stays CHECKED in U3"
+  - row: "L:RZ-41b"
+    theorems: ["RiemannZeta.Corrected.rz_41b_noncentral_trichotomy"]
+    status: "STATED"
+    gate: "the flip waits on the wall's read of CORRECTION-WAVE-2026-10-28"
+    scope: "corrected leg of L:RZ-41 (CC-16, §7.1 p17–18), built 2026-10-28 by the wall's word (night words, lane 1); class E1"
+    note: "spec specs/RZ-41b.md, the 'M — the corrected claim' section (22:40:59Z; V1-GREEN 22:55:14Z, against the correction draft 1b2af75c); γ ≠ ±I: exhaustive and exclusive types read by trace, parabolic conjugation-invariant, a parabolic fixes no point of ℍ and exactly one point of OnePoint ℝ, ∞ or rational (the cusp clause in Lean); siblings L:RZ-41a CHECKED and L:RZ-41c in U4, untouched"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "7f9a78383b1ef37f8546cc4f8b43e533192fd6777ada6c080dc18f011549c8b1"
+statement_sha256: "7f9a78383b1ef37f8546cc4f8b43e533192fd6777ada6c080dc18f011549c8b1"
+v2_signed: "2026-10-28T23:10:17Z"

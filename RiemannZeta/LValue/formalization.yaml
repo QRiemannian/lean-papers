@@ -1,0 +1,41 @@
+# Unit U10 (RiemannZeta/LValue) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U10"
+module_path: "RiemannZeta/LValue"
+namespace: "RiemannZeta.LValue"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.LValue.fact_prime_five"
+    note: "instance Fact (Nat.Prime 5), restated byte-identically to RiemannZeta.Bridge.fact_prime_five (Bridge/Challenge.lean:24–26, docstring included); a Prop-valued instance, so the units' instances are definitionally equal"
+  - name: "RiemannZeta.LValue.chi5"
+    note: "the binding definition of chi5 (L:RZ-58b states what it is); body byte-identical to RiemannZeta.Bridge.chi5 (Bridge/Challenge.lean:188–189); RiemannZeta.Bridge.chi5 = RiemannZeta.LValue.chi5 and (RiemannZeta.Pilot.chi5 : DirichletCharacter ℂ 5) = RiemannZeta.LValue.chi5 both close by rfl (scratch check, BUILD-LOG); a definition with a body, not a hole"
+rows:
+  - row: "L:RZ-58a"
+    theorems: ["RiemannZeta.LValue.rz_58a_LFunction_chi5_one"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word (lane 3: RZ-58 standalone)"
+    note: "split leg of L:RZ-58 (the target); L(1, chi5) read as DirichletCharacter.LFunction chi5 1, never LSeries or a tsum; E2 on the finite-formula route (CO decision 4, the ledger's E3 superseded by this measurement at the wall's read)"
+  - row: "L:RZ-58b"
+    theorems: ["RiemannZeta.LValue.rz_58b_chi5_kronecker", "RiemannZeta.LValue.rz_58b_chi5_real_primitive_conductor", "RiemannZeta.LValue.rz_58b_chi5_unique"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word (lane 3: RZ-58 standalone)"
+    note: "split leg of L:RZ-58 (the chi5 unification as theorems): Kronecker (5/·) through its defining values, real (Im = 0), primitive, conductor 5, unique"
+  - row: "L:RZ-58c"
+    theorems: ["RiemannZeta.LValue.rz_58c_value_approx"]
+    status: "STATED"
+    scope: "EFFORT lane, built 2026-10-28 by the wall's word (lane 3: RZ-58 standalone)"
+    note: "split leg of L:RZ-58 (the numeral ≈ 0.4304 as [0.43035, 0.43045))"
+  - row: "L:RZ-61c"
+    theorems: []
+    status: "RIDES-IN-U2"
+    note: "rides L:RZ-58a; its statement stays frozen in unit U2 (RiemannZeta.Bridge.rz_61c_weight_eq_two_L, Bridge/Challenge.lean:200–202); CO decision 2: Bridge/Solution.lean may import RiemannZeta.LValue.Solution and prove it from rz_58a_LFunction_chi5_one with Bridge.chi5 = LValue.chi5 by rfl; carries no theorem in this unit, uncounted here"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "ed3c5e79b0c6f6fe2e369b48b75d6648bafaf23d86c5c8c0835764eb39481c7b"
+statement_sha256: "ed3c5e79b0c6f6fe2e369b48b75d6648bafaf23d86c5c8c0835764eb39481c7b"
+v2_signed: "2026-10-28T20:53:05Z"

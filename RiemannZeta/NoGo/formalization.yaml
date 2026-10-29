@@ -1,0 +1,37 @@
+# Unit U5 (RiemannZeta/NoGo) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U5"
+module_path: "RiemannZeta/NoGo"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.NoGo.symmTraceless2"
+    note: "the symmetric traceless real 2x2 matrices (L:RZ-82a's p); a submodule of the matrix space, not the operator algebra (Q7); a definition with a body, not a hole"
+rows:
+  - row: "L:RZ-80"
+    theorems: ["RiemannZeta.NoGo.rz_80_z2_grading_incompatible"]
+    status: "STATED"
+    note: "relation (3.2) a hypothesis only (Q7); hbar != 0 supplied by the spec (implicit in print)"
+  - row: "L:RZ-81"
+    theorems: ["RiemannZeta.NoGo.rz_81_jacobi_forces_DEH_zero"]
+    status: "STATED"
+    note: "one theorem, the printed conjunction: (a) six relations => DEH = 0 and not all units in a nontrivial algebra; (b) a nonzero 2x2 realization of all six; both relations of (13.3) are hypotheses (V1 wording note: the print names only the first)"
+  - row: "L:RZ-82a"
+    theorems: ["RiemannZeta.NoGo.rz_82a_cartan_sl2"]
+    status: "STATED"
+    note: "split leg of L:RZ-82 (the SL(2,R) instance; keeps the ledger figure); stated under mathlib's local instance LieRing.ofAssociativeRing, as Mathlib.Algebra.Lie.Classical does"
+  - row: "L:RZ-82b"
+    theorems: ["RiemannZeta.NoGo.rz_82b_cartan_decomposition"]
+    status: "STATED"
+    note: "split leg of L:RZ-82; OUT-OF-Q5, pending the wall; NEEDS-DEVELOPMENT (no Cartan involution at the pin); elaborates cleanly with the pin's objects, so stated; counted only if the wall admits it"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2"
+statement_sha256: "f4c872442f0acc7aee951cf322243206ba56d68176cc6c47c4f754e408314ba2"
+v2_signed: "2026-10-28T17:37:11Z"
+statements_not_checked:
+  - "RiemannZeta.NoGo.rz_82b_cartan_decomposition — OUT-OF-Q5 (pending the wall), NEEDS-DEVELOPMENT (no Cartan involution at the pin); frozen in Challenge.lean under the V2 signature, absent from Solution.lean and from comparator.json theorem_names (CO 2026-10-28)"

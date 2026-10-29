@@ -1,0 +1,26 @@
+name = "lean-papers"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["LeanPapers"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[lean_lib]]
+name = "LeanPapers"
+
+[[lean_lib]]
+name = "RiemannZeta"
+globs = ["RiemannZeta.*"]
+
+[[lean_lib]]
+name = "ModularSurface"
+globs = ["ModularSurface.*"]

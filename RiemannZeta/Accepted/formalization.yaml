@@ -1,0 +1,37 @@
+# Unit U12 (RiemannZeta/Accepted) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U12"
+module_path: "RiemannZeta/Accepted"
+namespace: "RiemannZeta.Accepted"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.Accepted.scatteringRatio"
+    note: "restated byte-identically (docstring and body) from RiemannZeta.ZetaL.scatteringRatio (ZetaL/Challenge.lean:32–35), a provenance comment above; RiemannZeta.ZetaL.scatteringRatio = RiemannZeta.Accepted.scatteringRatio closes by rfl (scratch check, BUILD-LOG); a definition with a body, not a hole"
+  - name: "RiemannZeta.Accepted.ms13IsFundDisc"
+    note: "restated byte-identically (docstring and body) from ModularSurface.Now.ms13IsFundDisc, L:MS-13's local predicate (Now/Challenge.lean:148–152), a provenance comment above; ModularSurface.Now.ms13IsFundDisc = RiemannZeta.Accepted.ms13IsFundDisc closes by rfl (scratch check, BUILD-LOG); used by L:RZ-N1's pairing reading"
+rows:
+  - row: "L:RZ-N1"
+    theorems: ["RiemannZeta.Accepted.rz_N1_length_monotone_in_trace"]
+    status: "STATED"
+    scope: "NEW row, accepted as a Lean target by the wall 2026-10-28 (night words, word 2); NOW-class E1"
+    note: "spec specs/RZ-N1.md (V1-GREEN 20:50:09Z); StrictMonoOn of 2·arcosh(t/2) on (2, ∞), 12 and 8 fundamental discriminants, 4 and 6 the least traces, the reversal, and the two three-decimal intervals (upper margin at 3.525 is 5.65e-6)"
+  - row: "L:RZ-N2a"
+    theorems: ["RiemannZeta.Accepted.rz_N2a_rotation_invariant"]
+    status: "STATED"
+    scope: "NEW row leg, accepted as a Lean target by the wall 2026-10-28 (night words, word 2); NOW-class E0"
+    note: "spec specs/RZ-N2a.md (V1-GREEN 20:50:09Z); Q7 form (relations inline as the two sides of an iff). GATE: built now, but the ROW L:RZ-N2 enters T only after CC-13's correction lands — its N2b leg (= CC-13) is on the correction track and blocks it; N2c stays as the wall leaves it"
+  - row: "L:RZ-N4b"
+    theorems: ["RiemannZeta.Accepted.rz_N4b_scatteringRatio_norm_one"]
+    status: "STATED"
+    scope: "NEW row leg, accepted as a Lean target by the wall 2026-10-28 (night words, word 2); NOW-class E1–E2"
+    note: "spec specs/RZ-N4b.md (V1-GREEN 20:50:09Z); ‖scatteringRatio s‖ = 1 on Re s = 1/2, s ≠ 1/2 excluded (L:RZ-33a rule); the row L:RZ-N4's N4a leg is carried by RiemannZeta.ZetaL.rz_47_zero_gives_pole (U3), N4c CITED"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "43e639cca6e866ecb9ab68b4d46ee56a811a5f2443f091f05a83386fe448385a"
+statement_sha256: "43e639cca6e866ecb9ab68b4d46ee56a811a5f2443f091f05a83386fe448385a"
+v2_signed: "2026-10-28T22:52:27Z"

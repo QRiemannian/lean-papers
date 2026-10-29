@@ -1,0 +1,28 @@
+# Unit U14 (RiemannZeta/CorrectedReflections) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U14"
+module_path: "RiemannZeta/CorrectedReflections"
+namespace: "RiemannZeta.CorrectedReflections"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "6b89ce0e7ae0a71301a8d792b6e80f4cb850244df83f4731810377d70e3d2d12"
+pdf_note: "the corrected edition, served 2026-10-29 from 18:02:45Z (site tree public/pdfs/riemann-zeta-tetrahedral.pdf byte-equal, re-read 18:04:50Z); its §3 sentence after (3.5), p09–p10, carries the corrected CC-13 text; the old served edition 2d5287e7 printed the CC-13 sentence and is not the statement here"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+authority: "the wall's word 1, 2026-10-29 (priority/inbox/WORD-wall-2026-10-29-read-and-ship.md): CC-13 lands in print at the republish and L:RZ-N2 joins T"
+definitions: []
+rows:
+  - row: "L:RZ-N2b"
+    theorems:
+      - "RiemannZeta.CorrectedReflections.rz_N2b_reflections_anti_automorphism"
+      - "RiemannZeta.CorrectedReflections.rz_N2b_reflections_sign_up_to_order"
+    status: "CHECKED"  # flipped from manifests/build-3302cca.json, 2026-10-29
+    scope: "leg of L:RZ-N2 (CC-13, §3 after (3.5), p09–p10); siblings L:RZ-N2a CHECKED in U12 (rz_N2a_rotation_invariant), L:RZ-N2c NOT A TARGET; class E1"
+    note: "spec specs/RZ-N2b.md, section 'M spec against the corrected text (2026-10-29)' (17:53:23Z; V1-GREEN 18:00:59Z on both statements, specs/_V1-RZ-N2b.md); (i) the four reflections of the 4-cycle as ℂ-linear anti-automorphisms, read through Aᵐᵒᵖ, carry (3.2)–(3.5) to one another; (ii)(a) as automorphisms, the reflected relations ⟺ the sign-and-order-reversed set, (ii)(b) for every real ħ ≠ 0 a 2 × 2 witness of that set failing the sign-only set (the 'only'); (i) and (ii)(a) are one fact through op (V1 (d)), the independent content of the 'while' clause is (ii)(b); Q7 form (relations inline only)"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statements_not_checked: []
+statement_sha256_draft: "b6fb5ea6f8999345bc5115b48366496338b34661b774bed2d9514fc46e9615f5"
+statement_sha256: "b6fb5ea6f8999345bc5115b48366496338b34661b774bed2d9514fc46e9615f5"
+v2_signed: "2026-10-29T18:15:37Z"

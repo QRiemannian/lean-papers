@@ -1,0 +1,15 @@
+{
+    "challenge_module": "RiemannZeta.Provenance.Challenge",
+    "solution_module": "RiemannZeta.Provenance.Solution",
+    "theorem_names": [
+        "RiemannZeta.Provenance.rz_14a_area_fd",
+        "RiemannZeta.Provenance.rz_05_translation_length",
+        "RiemannZeta.Provenance.rz_06b_systole_at_F2",
+        "RiemannZeta.Provenance.rz_09_Q_sqrt5_invariants",
+        "RiemannZeta.Provenance.rz_13_min_real_quadratic_discr",
+        "RiemannZeta.Provenance.rz_14b_vol_X1",
+        "RiemannZeta.Provenance.rz_14b_gaussBonnet_value"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

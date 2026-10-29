@@ -1,0 +1,23 @@
+{
+    "challenge_module": "RiemannZeta.MatricesMobius.Challenge",
+    "solution_module": "RiemannZeta.MatricesMobius.Solution",
+    "theorem_names": [
+        "RiemannZeta.MatricesMobius.rz_41a_hyperbolic_elliptic",
+        "RiemannZeta.MatricesMobius.rz_41c_normal_forms",
+        "RiemannZeta.MatricesMobius.rz_43a_elliptic_orders",
+        "RiemannZeta.MatricesMobius.rz_43b_orbifold_points",
+        "RiemannZeta.MatricesMobius.rz_53a_gaussMap_mapsTo",
+        "RiemannZeta.MatricesMobius.rz_53a_hypLaplacian_eq",
+        "RiemannZeta.MatricesMobius.rz_53c_gauss_generates_cf",
+        "RiemannZeta.MatricesMobius.rz_53c_mayer_is_transfer",
+        "RiemannZeta.MatricesMobius.rz_55_gauss_branches",
+        "RiemannZeta.MatricesMobius.rz_63a_sinh_identity",
+        "RiemannZeta.MatricesMobius.rz_63b_geometric",
+        "RiemannZeta.MatricesMobius.rz_64a_gamma2_min_trace",
+        "RiemannZeta.MatricesMobius.rz_64b_disc_Q_sqrt2",
+        "RiemannZeta.MatricesMobius.rz_64c_conductor_one",
+        "RiemannZeta.MatricesMobius.rz_83_hyperbolic_products"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

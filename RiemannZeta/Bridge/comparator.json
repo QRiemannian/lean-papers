@@ -1,0 +1,25 @@
+{
+  "challenge_module": "RiemannZeta.Bridge.Challenge",
+  "solution_module": "RiemannZeta.Bridge.Solution",
+  "theorem_names": [
+    "RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic",
+    "RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic_GL",
+    "RiemannZeta.Bridge.rz_03_min_hyperbolic_abs_trace",
+    "RiemannZeta.Bridge.rz_04_fib_det_charpoly",
+    "RiemannZeta.Bridge.rz_04_fib_eigenvalues",
+    "RiemannZeta.Bridge.rz_04_fib_sq_eigenvalues",
+    "RiemannZeta.Bridge.rz_06a_two_log_sq_eq",
+    "RiemannZeta.Bridge.rz_06a_four_log_phi_approx",
+    "RiemannZeta.Bridge.rz_12_anchoring_identity",
+    "RiemannZeta.Bridge.rz_61a_weight_chain",
+    "RiemannZeta.Bridge.rz_61a_weight_approx",
+    "RiemannZeta.Bridge.rz_61b_factor_two",
+    "RiemannZeta.Bridge.rz_61c_weight_eq_two_L"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

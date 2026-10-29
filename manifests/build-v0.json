@@ -1,0 +1,12 @@
+{
+  "manifest": "build-v0",
+  "clock": "2026-10-28T16:43:56Z",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "target": "LeanPapers (LeanPapers.lean = `import Mathlib`)",
+  "lake_build_exit": 0,
+  "elapsed_seconds": 21.79,
+  "jobs": 8707,
+  "host_cores": 10,
+  "cache": "HIT — lake exe cache get: No files to download, 8690 files already decompressed"
+}

@@ -1,0 +1,25 @@
+{
+  "challenge_module": "RiemannZeta.ZetaL.Challenge",
+  "solution_module": "RiemannZeta.ZetaL.Solution",
+  "theorem_names": [
+    "RiemannZeta.ZetaL.rz_15_geometryConstant_writings",
+    "RiemannZeta.ZetaL.rz_16_geometryConstant_approx",
+    "RiemannZeta.ZetaL.rz_17_quaternary_product",
+    "RiemannZeta.ZetaL.rz_21_zeta_two_four",
+    "RiemannZeta.ZetaL.rz_32a_correction_q_form",
+    "RiemannZeta.ZetaL.rz_33a_functional_equation",
+    "RiemannZeta.ZetaL.rz_34_euler_product",
+    "RiemannZeta.ZetaL.rz_46a_o_lambda_convention",
+    "RiemannZeta.ZetaL.rz_46a_i_expansion",
+    "RiemannZeta.ZetaL.rz_46a_ii_iii_xi_factor",
+    "RiemannZeta.ZetaL.rz_47_zero_gives_pole",
+    "RiemannZeta.ZetaL.rz_49_norm_factor_eq_one",
+    "RiemannZeta.ZetaL.rz_60_golden_identities"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

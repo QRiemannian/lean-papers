@@ -1,0 +1,38 @@
+# date -u: Wed Oct 28 22:38:56 UTC 2026
+# interpreter: Python 3.14.4 at /opt/homebrew/bin/python3, mpmath 1.3.0
+# command: cd /Users/qriemannian/Claude/projects/lean-papers/computations/MS-N5b/impl-a && /opt/homebrew/bin/python3 -I compute.py
+
+L:MS-N5b implementation A  (mpmath 1.3.0)
+python 3.14.4
+
+run dps 30, grid step 0.02: 6 zeta zeros, 16 L zeros in (0, 40]  (9.8 s)
+run dps 50, grid step 0.01: 6 zeta zeros, 16 L zeros in (0, 40]  (26.5 s)
+  max |zero(dps30) - zero(dps50)|: zeta 2.45e-36, L 1.84e-36
+
+Checks:
+  zeta: mpmath.nzeros(40) = 6 ; zeros found = 6
+  zeta: max |found - mpmath.zetazero(k)| over k = 1..6 : 2.12e-50
+  L: max |Im Z_chi(t)|/|Z_chi(t)| on t = 0, 0.5, ..., 40 : 1.02e-49 (real on the line)
+  L: argument principle N(40) = theta(40)/pi + S(40) = 15.5388152304 + 0.461184769572 = 16.0 ; zeros found = 16
+  L: max |L(1/2 + i gamma, chi_5)| at the refined zeros: 1.42e-49
+
+zeta zeros in (0, 40]: 14.1347251417, 21.0220396388, 25.0108575801, 30.4248761259, 32.9350615877, 37.5861781588
+L(s, chi_5) zeros in (0, 40]: 6.64845334473, 9.83144443289, 11.9588456261, 16.0338211284, 17.5669942923, 19.5407326228, 22.2274054545, 24.5884662174, 26.776095948, 28.4610351002, 29.7079093505, 33.0004560069, 34.7288129789, 35.8686383718, 38.1291847214, 39.5605729464
+
+Closest zeta/L pairs in 0 <= t <= 40:
+  |32.935061587739 - 33.000456006871| = 0.06539441913
+  |25.010857580146 - 24.588466217408| = 0.4223913627
+  |37.586178158826 - 38.129184721437| = 0.5430065626
+  (for reference: least zeta/zeta gap 2.51019, least L/L gap 1.13983)
+
+gamma_zeta (near 32.9) = 32.93506158773918969066237
+gamma_L    (near 33.0) = 33.00045600687051436794976
+
+Printed numerals and claims (rule: round at the printed number's last significant digit, compare integers):
+  gamma_zeta                                   computed      32.93506158773919 | printed  32.935 (5 s.d.) | PASS
+  gamma_L                                      computed      33.00045600687051 | printed  33.000 (5 s.d.) | PASS
+  closest zeta/L pair in 0 <= t <= 40          closest pair (32.935062, 33.000456), gap 0.0653944; next 0.422391 | PASS
+  scan completeness on the window              zeta 6 = nzeros 6 ; L 16 = argument-principle 16.0 | PASS
+
+4 of 4 PASS
+runtime 59.0 s

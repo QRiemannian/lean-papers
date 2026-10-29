@@ -1,0 +1,46 @@
+# Unit U6 (RiemannZeta/Cyclotomic) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U6"
+module_path: "RiemannZeta/Cyclotomic"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions: []
+rows:
+  - row: "L:RZ-65"
+    theorems: ["RiemannZeta.Cyclotomic.rz_65_gal_cyclotomic_five"]
+    status: "PROVED"
+  - row: "L:RZ-71a"
+    theorems: ["RiemannZeta.Cyclotomic.rz_71a_cyclotomic_completeness_legs12"]
+    status: "PROVED"
+    note: "split leg of L:RZ-71 (Prop. 10.1 legs 1–2); leg 1's '= 4 ⇔ p = 5' is the same fact as L:RZ-72a clause 7 — both stated, counted once"
+  - row: "L:RZ-71b"
+    theorems: ["RiemannZeta.Cyclotomic.rz_71b_unique_quadratic_subfield", "RiemannZeta.Cyclotomic.rz_71b_leg3_selects_five"]
+    status: "PROVED"
+    note: "split leg of L:RZ-71 (leg 3); OUT-OF-Q5, pending the wall; counted only if the wall admits it — proved in Solution all the same (proofs phase 2026-10-28)"
+  - row: "L:RZ-72a"
+    theorems: ["RiemannZeta.Cyclotomic.rz_72a_degrees", "RiemannZeta.Cyclotomic.rz_72a_gal_seven_no_quartic", "RiemannZeta.Cyclotomic.rz_72a_units_cyclic", "RiemannZeta.Cyclotomic.rz_72a_units_contain_quartic", "RiemannZeta.Cyclotomic.rz_72a_examples", "RiemannZeta.Cyclotomic.rz_72a_quartic_layer_infinitely_often", "RiemannZeta.Cyclotomic.rz_72a_degree_four_only_five", "RiemannZeta.Cyclotomic.rz_72a_cyclotomic_five_does_not_recur"]
+    status: "PROVED"
+    note: "split leg of L:RZ-72; eight clauses, clause 8 (containment) added at V1 drift D1; clause 7 counted once with L:RZ-71a leg 1"
+  - row: "L:RZ-72b"
+    theorems: ["RiemannZeta.Cyclotomic.rz_72b_sqrt_five_does_not_recur"]
+    status: "PROVED"
+    note: "split leg of L:RZ-72; OUT-OF-Q5, pending the wall; its (A) is rz_71b_unique_quadratic_subfield, stated and counted once — proved in Solution all the same (proofs phase 2026-10-28)"
+  - row: "L:RZ-72c"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-72; OUT-OF-Q5, NEEDS-DEVELOPMENT (no Dedekind-zeta factorisation into Dirichlet L-functions at the pin); the spec's shape-only signature does not elaborate at the pin (DirichletCharacter.LFunction χ.primitiveCharacter: failed to synthesize NeZero χ.conductor); no statement"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc"
+statement_sha256: "a06f2a6e81f5925ecc79096314d79d21ae4401149dc5fcf9a1d05b2c23f78ffc"
+v2_signed: "2026-10-28T17:46:54Z"
+statements_not_checked: []
+proofs_phase:
+  closed: "2026-10-28T18:05:00Z"
+  solution_module: "RiemannZeta.Cyclotomic.Solution"
+  theorems_proved: 13
+  axioms: ["propext", "Classical.choice", "Quot.sound"]

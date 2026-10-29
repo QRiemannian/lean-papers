@@ -1,0 +1,45 @@
+# Unit U2 (RiemannZeta/Bridge) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U2"
+module_path: "RiemannZeta/Bridge"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+rows:
+  - row: "L:RZ-03"
+    theorems: ["RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic", "RiemannZeta.Bridge.rz_03_two_lt_abs_trace_of_isHyperbolic_GL", "RiemannZeta.Bridge.rz_03_min_hyperbolic_abs_trace"]
+    status: "STATED"
+  - row: "L:RZ-04"
+    theorems: ["RiemannZeta.Bridge.rz_04_fib_det_charpoly", "RiemannZeta.Bridge.rz_04_fib_eigenvalues", "RiemannZeta.Bridge.rz_04_fib_sq_eigenvalues"]
+    status: "STATED"
+    note: "phi^-2 spelled goldenRatio ^ (-2 : ℤ) (the unit's one spelling, CO note); the spec's (goldenRatio ^ 2)⁻¹ is the same real number"
+  - row: "L:RZ-06a"
+    theorems: ["RiemannZeta.Bridge.rz_06a_two_log_sq_eq", "RiemannZeta.Bridge.rz_06a_four_log_phi_approx"]
+    status: "STATED"
+    note: "the ledger's own split of L:RZ-06; the systole identification is L:RZ-06b, not in this unit"
+  - row: "L:RZ-12"
+    theorems: ["RiemannZeta.Bridge.rz_12_anchoring_identity"]
+    status: "STATED"
+  - row: "L:RZ-61a"
+    theorems: ["RiemannZeta.Bridge.rz_61a_weight_chain", "RiemannZeta.Bridge.rz_61a_weight_approx"]
+    status: "STATED"
+    note: "split leg of L:RZ-61; the real-number chain of (9.7) and its numeral"
+  - row: "L:RZ-61b"
+    theorems: ["RiemannZeta.Bridge.rz_61b_factor_two"]
+    status: "STATED"
+    note: "split leg of L:RZ-61 (the ledger's RZ-62(a)); OUT-OF-Q5 (pending the wall) — counted in T, not in N; the arithmetic of the printed symbols only"
+  - row: "L:RZ-61c"
+    theorems: ["RiemannZeta.Bridge.rz_61c_weight_eq_two_L"]
+    status: "STATED"
+    note: "split leg of L:RZ-61; gate CLOSED 2026-10-28T21:14:41Z via L:RZ-58a (Bridge/Solution imports LValue.Solution, the one ruled cross-unit import); was GATED (L:RZ-58) — stated because chi5 and DirichletCharacter.LFunction elaborate at the pin; the proof waits on L:RZ-58's closed form; chi5 is a candidate, the binding definition is L:RZ-58's"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd"
+statement_sha256: "97cd8d05c2b079fac2662be7a2f6bfe7f6dd4757dc10415401fabe41b23df3cd"
+v2_signed: "2026-10-28T17:27:17Z"
+statements_not_checked: []
+statements_not_checked_history:
+  - "RiemannZeta.Bridge.rz_61c_weight_eq_two_L — was GATED on L:RZ-58 from 2026-10-28T17:27Z; CLOSED 2026-10-28T21:14:41Z: proved in Bridge/Solution.lean from RiemannZeta.LValue.rz_58a_LFunction_chi5_one under the ruled import (CO decision, _UNIT-U10.md); Challenge.lean unchanged at 97cd8d05; theorem_names now 13"

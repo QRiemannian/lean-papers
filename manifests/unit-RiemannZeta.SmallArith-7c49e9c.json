@@ -1,0 +1,139 @@
+{
+  "clock": "2026-10-28T22:36:35Z",
+  "commit": "7c49e9c",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lake_build_seconds": null,
+  "checks": [
+    {
+      "check": "no_sorry_no_axiom",
+      "status": "PASS",
+      "detail": "2 .lean files scanned"
+    },
+    {
+      "check": "axioms",
+      "status": "PASS",
+      "detail": "1 Solution module(s), 10 theorem(s), all within {propext Classical.choice Quot.sound}"
+    },
+    {
+      "check": "comparator",
+      "status": "PASS",
+      "detail": "1 unit(s) okay (landrun: /Users/qriemannian/Claude/projects/comparator/scripts/fake-landrun.sh)"
+    },
+    {
+      "check": "challenge_digest",
+      "status": "PASS",
+      "detail": "1 Challenge.lean digest(s) equal the signed statement_sha256"
+    },
+    {
+      "check": "retired_names",
+      "status": "PASS",
+      "detail": "0 hits for the four retired names"
+    }
+  ],
+  "axioms": [
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_38_xp_trajectories",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.orbEulerChar.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.riemannXiRZ._proof_1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry._proof_1_2",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry._proof_1_3",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.bernoulliGF.eq_1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_76a_seven_eighths_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_77a_casimir_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "RiemannZeta.SmallArith.Solution",
+      "theorem": "RiemannZeta.SmallArith.rz_44a_orbifold_euler_arith",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "challenge_digests": [
+    {
+      "unit": "./RiemannZeta/SmallArith",
+      "sha256": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f",
+      "signed": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f"
+    }
+  ],
+  "file_hashes": {
+    "./RiemannZeta/SmallArith/Challenge.lean": "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f",
+    "./RiemannZeta/SmallArith/Solution.lean": "f64d9dcda951d3d2e6fced5fe32a62be1f174b39c485aab019a5ddd4e8eaa8a3",
+    "./RiemannZeta/SmallArith/comparator.json": "0aec01dc2c3fa0f7a91e76060829dbb1d0acde0d5f09ed0a4cf59372566ff545",
+    "./RiemannZeta/SmallArith/formalization.yaml": "9a5a76e8ec329aa82abc8138410d92b97f44ccaacbb88795a2290abe1fa0e360"
+  },
+  "verdict": "PASS",
+  "mode": "unit",
+  "unit": "RiemannZeta/SmallArith",
+  "arms": "no_sorry_no_axiom axioms comparator challenge_digest retired_names (no lake build)"
+}

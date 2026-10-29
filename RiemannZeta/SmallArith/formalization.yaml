@@ -1,0 +1,51 @@
+# Unit U7 (RiemannZeta/SmallArith) — per-unit record (FAN-OUT-PLAN-v1 §5)
+unit: "U7"
+module_path: "RiemannZeta/SmallArith"
+paper: "The Tetrahedral Structure of the Riemann Zeta Function (April 2026, revised October 2026)"
+pdf_sha256: "2d5287e7bd039434cfa14324ddb329b745f45aa9649f278fd53252d70f533e54"
+mathlib_rev: "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain: "leanprover/lean4:v4.33.0"
+definitions:
+  - name: "RiemannZeta.SmallArith.bernoulliGF"
+    note: "t/(e^t − 1) on R with its removable value 1 at t = 0 (L:RZ-24); a definition with a body, not a hole"
+  - name: "RiemannZeta.SmallArith.orbEulerChar"
+    note: "2 − 2g − Σ(1 − 1/m) − n over Q, the standard orbifold Euler characteristic, unprinted in the paper (L:RZ-44a; V1: faithful); a definition with a body, not a hole"
+  - name: "RiemannZeta.SmallArith.riemannXiRZ"
+    note: "restated identically to RiemannZeta.ZetaL.riemannXiRZ (units do not import each other); named by L:RZ-76a's docstring for the Path B prefactor; no theorem of this unit uses it — the prefactor is stated as the polynomial s(s − 1)/2 the spec writes"
+rows:
+  - row: "L:RZ-24"
+    theorems: ["RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry"]
+    status: "PROVED"
+    note: "corrected (4.2) (CC-1 landed); convention bernoulli, B1 = −1/2; (iv) the printed implication over any Q with Q(−X) − Q(X) = X"
+  - row: "L:RZ-38"
+    theorems: ["RiemannZeta.SmallArith.rz_38_xp_trajectories"]
+    status: "PROVED"
+    note: "Hamilton sign x' = +dH/dp; (x0, p0) != (0, 0) in (d) is a reading (V1), not a repair"
+  - row: "L:RZ-44a"
+    theorems: ["RiemannZeta.SmallArith.rz_44a_orbifold_euler_arith"]
+    status: "PROVED"
+    note: "split leg of L:RZ-44 (the arithmetic); m >= 7 forward only; L:RZ-44b (geometry) EFFORT-FAR, not specced; shared with L:MS-42 (V1 re-key: same mathematics)"
+  - row: "L:RZ-76a"
+    theorems: ["RiemannZeta.SmallArith.rz_76a_seven_eighths_arith"]
+    status: "PROVED"
+    note: "split leg of L:RZ-76 (the arithmetic; keeps the ledger figure); Path C served sign +1/8"
+  - row: "L:RZ-76b"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-76; NOT A LEAN TARGET (roles: Stirling + argument principle, Selberg trace formula + Weyl law, [I]/coincidence statements); no theorem by rule, uncounted; Path A wording note on the correction track"
+  - row: "L:RZ-77a"
+    theorems: ["RiemannZeta.SmallArith.rz_77a_casimir_arith"]
+    status: "PROVED"
+    note: "split leg of L:RZ-77 (the arithmetic; keeps the ledger figure); IsMaxOn on R, uniqueness not stated"
+  - row: "L:RZ-77b"
+    theorems: []
+    status: "OPEN"
+    note: "split leg of L:RZ-77; OUT-OF-Q5 (pending the wall), NEEDS-DEVELOPMENT: no Casimir element, no principal-series representation, no derived action on smooth vectors, no hyperbolic Laplacian at the pin; the V1-signed spec is prose only, so no statement elaborates with the pin's objects; uncounted"
+authors:
+  - "Andri Sigurgeirsson Vidalin"
+automation:
+  methods:
+    - "Claude models (Anthropic), as agents"
+statement_sha256_draft: "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f"
+statement_sha256: "2031d927a8140337d7753b28688f9f1e309fea976472d6fba51507515927fa3f"
+v2_signed: "2026-10-28T17:43:43Z"

@@ -1,0 +1,37 @@
+# pinned output -- MS-17 implementation B
+# started (date -u): 2026-10-28T20:36:03Z
+# interpreter: /opt/homebrew/bin/python3 -I (3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)])
+# command (from inside this folder): /opt/homebrew/bin/python3 -I compute.py
+# compute.py sha256: 60125c7529b9b98a8de4dd55c337eb876fdf6b7ae2dd0f9b1ac4c0949fc0ad7b
+
+MS-17 implementation B (exact rationals: Sturm sequences + exact bisection)
+python 3.14.4
+
+Sturm: L has 2 real roots, 1 of them in (1, inf); P has 1 real root(s), 1 in (1, inf).
+setting 1 (bracket width < 1/100000000000000000000):
+  Lehmer  in [1.17628081825991750654261235736752766456447716, 1.17628081825991750654938862094556206727702374]
+  plastic in [1.32471795724474602595592542808589087144355290, 1.32471795724474602596270169166392527415609948]
+setting 2 (bracket width < 1/10000000000000000000000000000000000000000):
+  Lehmer  in [1.17628081825991750654407033847403505069338608, 1.17628081825991750654407033847403505069347792]
+  plastic in [1.32471795724474602596090885447809734073431258, 1.32471795724474602596090885447809734073440441]
+Convergence: setting-2 brackets nested inside setting-1 brackets: yes
+
+Comparison with the printed numerals (rule: round half-even at 5 decimals; both bracket ends must round to the printed value):
+  Lehmer's number    printed 1.17628   bracket [1.17628081825991750654407033847403505069338608, 1.17628081825991750654407033847403505069347792]
+                     both ends round to 1.17628 / 1.17628   PASS
+  plastic number     printed 1.32472   bracket [1.32471795724474602596090885447809734073431258, 1.32471795724474602596090885447809734073440441]
+                     both ends round to 1.32472 / 1.32472   PASS
+
+  Lehmer < phi (exact: upper bracket end h has h^2 - h - 1 = -0.792644254854 < 0): PASS
+  plastic < phi (exact: upper bracket end h has h^2 - h - 1 = -0.569840290998 < 0): PASS
+
+  Supplementary: T(y) coefficients (y^0..y^5) = ['3', '4', '-5', '-5', '1', '1']; identity x^-5 L(x) = T(x+1/x) at 4 points: True
+  Sturm on T: 4 roots in (-2, 2), 1 in (2, inf) -> Lehmer's number has Salem shape: yes
+  Supplementary: P has no rational root: True; |conjugates|^2 = 1/theta in [0.75487766624669276005, 0.75487766624669276005] < 1 -> Pisot shape: yes
+  ('smallest known Salem' and 'smallest Pisot' (Siegel 1944) are literature statements; not computed here.)
+
+SUMMARY: 2 of 2 printed numerals PASS; both below phi: PASS.
+ROW VERDICT: PASS
+
+# finished (date -u): 2026-10-28T20:36:03Z
+# wall-clock (/usr/bin/time -p real): 0.02 s

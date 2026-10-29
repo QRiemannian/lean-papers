@@ -1,0 +1,13 @@
+{
+    "challenge_module": "RiemannZeta.SmallArith.Challenge",
+    "solution_module": "RiemannZeta.SmallArith.Solution",
+    "theorem_names": [
+        "RiemannZeta.SmallArith.rz_24_bernoulli_gf_symmetry",
+        "RiemannZeta.SmallArith.rz_38_xp_trajectories",
+        "RiemannZeta.SmallArith.rz_44a_orbifold_euler_arith",
+        "RiemannZeta.SmallArith.rz_76a_seven_eighths_arith",
+        "RiemannZeta.SmallArith.rz_77a_casimir_arith"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

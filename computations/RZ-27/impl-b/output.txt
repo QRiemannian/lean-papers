@@ -1,0 +1,51 @@
+# pinned output -- RZ-27 implementation B
+# started (date -u): 2026-10-28T20:36:03Z
+# interpreter: /opt/homebrew/bin/python3 -I (3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)])
+# command (from inside this folder): /opt/homebrew/bin/python3 -I compute.py
+# compute.py sha256: b0e06f53f149a2a69b2d99647f4075db513f31be9a922914380668672aa3e835
+
+RZ-27 implementation B (decimal + fractions; Machin pi; Apery zeta(3))
+python 3.14.4
+
+Convergence (setting 1: prec 60, k<=20, Apery 110 terms | setting 2: prec 90, k<=30, Apery 160 terms)
+  pi  s1 = 3.1415926535897932384626433832795028841972
+      s2 = 3.1415926535897932384626433832795028841972   |s1-s2| = 4.59E-60
+  z3  s1 = 1.2020569031595942853997381615114499907650
+      s2 = 1.2020569031595942853997381615114499907650   |s1-s2| = 1.56E-60
+  A   s1 = 1.2057996486783263401574122526094987023088
+      s2 = 1.2057996486783263401574122526094987023088   |s1-s2| = 1.85E-61
+  C   s1 = -0.0037427455187320547576740910980487115438
+      s2 = -0.0037427455187320547576740910980487115438   |s1-s2| = 3.98E-62
+  max |s1-s2| = 4.59E-60  -> convergence OK (threshold 1e-45)
+
+Consistency of (4.3): 7pi^3/180 - 2*sum - zeta(3) = 3.000E-89  (zeta(3) from Apery, independent of (4.3))
+
+Quantities (setting 2):
+  zeta(3)        = 1.202056903159594285399738161511
+  7 pi^3 / 180   = 1.205799648678326340157412252609
+  -2 sum_k 1/(k^3 (e^(2 pi k)-1)) = -3.742745518732054757674091098049E-3
+
+Comparison with the printed numerals (rule: round half-even at the printed last place):
+  (4.4) 7pi^3/180                                printed      1.2058   computed 1.2057996486783263   rounded       1.2058   PASS   (truncation agrees: no)
+  (4.4) overshoot, % of zeta(3): (A-z3)/z3       printed        0.31   computed 0.3113617590726601   rounded         0.31   PASS   (truncation agrees: yes)
+        overshoot, % of A: (A-z3)/A [alt base]   printed        0.31   computed 0.3103953067853742   rounded         0.31   PASS   (truncation agrees: yes)
+  (4.5) modular correction -2*sum                printed   -0.003743   computed -3.7427455187320548E-3   rounded    -0.003743   PASS   (truncation agrees: no)
+  nome q = e^(-2 pi)                             printed     1.87e-3   computed 1.8674427317079888E-3   rounded      1.87e-3   PASS   (truncation agrees: no)
+  k=1 share of total correction, %               printed      99.977   computed 99.9766930076757643   rounded       99.977   PASS   (truncation agrees: no)
+  table k=1 term 1/(k^3(e^(2pi k)-1))            printed    1.871e-3   computed 1.8709365986606441E-3   rounded     1.871e-3   PASS   (truncation agrees: no)
+  table k=2 term                                 printed    4.359e-7   computed 4.3591931472601457E-7   rounded     4.359e-7   PASS   (truncation agrees: yes)
+  table k=3 term                                 printed   2.412e-10   computed 2.4120045105523751E-10   rounded    2.412e-10   PASS   (truncation agrees: yes)
+  table k=1 cumulative fraction, %               printed      99.977   computed 99.9766930076757643   rounded       99.977   PASS   (truncation agrees: no)
+  table k=2 cumulative fraction, %               printed     99.9999   computed 99.9999871008778954   rounded     100.0000   FAIL   (truncation agrees: yes)
+  table k=3 cumulative fraction ('~1')           printed           1   computed 0.9999999998983601   rounded            1   PASS   (truncation agrees: no)
+  s4.5 zeta(3) as % of 7pi^3/180                 printed       99.69   computed 99.6896046932146258   rounded        99.69   PASS   (truncation agrees: no)
+  s4.5 excess of 7pi^3/180 over zeta(3), %       printed        0.31   computed 0.3113617590726601   rounded         0.31   PASS   (truncation agrees: yes)
+
+Sentence check: t_(k+1)/t_k < e^(-2pi) for k = 1..29: PASS  (max ratio 1.687E-3 at k=29; min ratio 2.330E-4; e^(-2pi) = 1.8674E-3)
+  (holds for every k exactly: t_(k+1)/t_k = (k/(k+1))^3 (e^(2pi k)-1)/(e^(2pi(k+1))-1) and (e^(2pi k)-1)/(e^(2pi(k+1))-1) < e^(-2pi) <=> 1 < e^(2pi).)
+
+SUMMARY: 13 of 14 printed numerals PASS at the stated rounding rule; ratio sentence PASS; convergence OK.
+ROW VERDICT: FAIL (see the FAIL lines above)
+
+# finished (date -u): 2026-10-28T20:36:03Z
+# wall-clock (/usr/bin/time -p real): 0.01 s

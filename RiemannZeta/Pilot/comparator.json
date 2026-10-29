@@ -1,0 +1,18 @@
+{
+    "challenge_module": "RiemannZeta.Pilot.Challenge",
+    "solution_module": "RiemannZeta.Pilot.Solution",
+    "theorem_names": [
+        "RiemannZeta.Pilot.rz_02_fib_sq",
+        "RiemannZeta.Pilot.rz_02_fib_sq_mem_SL",
+        "RiemannZeta.Pilot.rz_07a_golden_conj_products",
+        "RiemannZeta.Pilot.rz_07b_field_norm",
+        "RiemannZeta.Pilot.rz_11_gaussSum_chi5",
+        "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat",
+        "RiemannZeta.Pilot.rz_20a_zeta_two_mul_nat_rat_mul_pi_pow",
+        "RiemannZeta.Pilot.rz_23_bernoulli_odd_eq_zero",
+        "RiemannZeta.Pilot.rz_66_discr_cyclotomic_five",
+        "RiemannZeta.Pilot.rz_67_classNumber_cyclotomic_five"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

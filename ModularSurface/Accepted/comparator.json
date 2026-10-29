@@ -1,0 +1,10 @@
+{
+    "challenge_module": "ModularSurface.Accepted.Challenge",
+    "solution_module": "ModularSurface.Accepted.Solution",
+    "theorem_names": [
+        "ModularSurface.Accepted.ms_N2a_closedForm_vanishes",
+        "ModularSurface.Accepted.ms_N3_phi_from_systole"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

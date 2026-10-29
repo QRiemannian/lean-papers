@@ -1,0 +1,37 @@
+# date -u: Wed Oct 28 22:36:34 UTC 2026
+# interpreter: Python 3.14.4 at /opt/homebrew/bin/python3, mpmath 1.3.0
+# command: cd /Users/qriemannian/Claude/projects/lean-papers/computations/RZ-N6/impl-a && /opt/homebrew/bin/python3 -I compute.py
+
+L:RZ-N6 implementation A  (mpmath 1.3.0)
+python 3.14.4
+
+A and B by the Fredholm determinant (Taylor basis at centre c, N x N truncation):
+  c = 1.0  N = 40 dps = 60 : A = 0.6629522626574784490106   Z(3/2) = 0.823083812022399860651   Z(5/2) = 0.9858200552837906990219   B = 0.8349229736307773596013   (1.7 s)
+  c = 1.0  N = 60 dps = 90 : A = 0.6629522626573948696531   Z(3/2) = 0.8230838120222122088664   Z(5/2) = 0.9858200552837627132666   B = 0.8349229736306107106945   (6.5 s)
+  c = 1.25 N = 60 dps = 90 : A = 0.6629522626573949272909   Z(3/2) = 0.8230838120222123314996   Z(5/2) = 0.985820055283762735891   B = 0.8349229736306108159302   (7.2 s)
+  |A(c=1,N=40) - A(c=1,N=60)|   = 8.36e-14
+  |A(c=5/4,N=60) - A(c=1,N=60)| = 5.76e-17
+  |B(c=1,N=40) - B(c=1,N=60)|   = 1.67e-13
+  |B(c=5/4,N=60) - B(c=1,N=60)| = 1.05e-16
+  trace check: tr M (c=1,N=60) = 0.2916638203464448848879913 ; exact fixed-point trace = 0.2916638203464448848970624 ; |diff| = 9.07e-21
+
+B by the Euler product (8.5) over enumerated primitive hyperbolic classes:
+  class counts t = 3..8: [1, 2, 2, 3, 2, 4]  (narrow class-number sums: [1, 2, 2, 3, 2, 4])
+  trace <= 1000:   78441 classes; partial product = 0.835029826485 ; tail estimate 0.0001282 ; tail-corrected B = 0.834922819979  (0.3 s)
+  trace <= 2000:  283108 classes; partial product = 0.834972024822 ; tail estimate 5.88e-5 ; tail-corrected B = 0.834922930417  (0.9 s)
+  trace <= 4000: 1031022 classes; partial product = 0.834945644616 ; tail estimate 2.717e-5 ; tail-corrected B = 0.834922963479  (3.0 s)
+  |B(Euler, trace<=4000, tail-corrected) - B(Fredholm)| = 1.02e-8
+
+Result (reference: c = 1, N = 60, dps 90):
+  A = det(1 - L_{3/2})          = 0.662952262657394869653084963914
+  B = Z(3/2)/Z(5/2)              = 0.834922973630610710694492069169
+  B - A                          = 0.171970710973215841041407105255
+
+Printed numerals (rule: round at the printed number's last significant digit, compare integers):
+  A = det(1 - L_s) at s = 3/2                    computed     0.66295226265739486965 | printed  0.663 (3 s.d.) | PASS
+  B = Z(s)/Z(s+1) at s = 3/2 (Fredholm route)    computed     0.83492297363061071069 | printed  0.835 (3 s.d.) | PASS
+  B = Z(s)/Z(s+1) at s = 3/2 (Euler route)       computed     0.83492296347919570294 | printed  0.835 (3 s.d.) | PASS
+  inequality A != B (the non-identity)           computed B - A = 0.171970710973 (> 100 x the spread of the runs) | PASS
+
+4 of 4 PASS
+runtime 19.8 s

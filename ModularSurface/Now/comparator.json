@@ -1,0 +1,24 @@
+{
+    "challenge_module": "ModularSurface.Now.Challenge",
+    "solution_module": "ModularSurface.Now.Solution",
+    "theorem_names": [
+        "ModularSurface.Now.ms_02_triangleFamily",
+        "ModularSurface.Now.ms_03_heckeFamily",
+        "ModularSurface.Now.ms_05_fixedPoints_F2",
+        "ModularSurface.Now.ms_07_selbergNorm_F2",
+        "ModularSurface.Now.ms_09a_goldenRatio_sq",
+        "ModularSurface.Now.ms_09b_fundamental_automorph",
+        "ModularSurface.Now.ms_13_smallest_fundDisc",
+        "ModularSurface.Now.ms_14a_listed_in_negPellSet",
+        "ModularSurface.Now.ms_14b_negPellSet_infinite",
+        "ModularSurface.Now.ms_14c_negPellSet_initial",
+        "ModularSurface.Now.ms_22_halfSystole",
+        "ModularSurface.Now.ms_24b_geometryConstant_approx5",
+        "ModularSurface.Now.ms_25_productRelation_logCollapse",
+        "ModularSurface.Now.ms_32a_certificate_max_and_next_rung",
+        "ModularSurface.Now.ms_32b_certificate_max_fields",
+        "ModularSurface.Now.ms_39_mayer_on_constant"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

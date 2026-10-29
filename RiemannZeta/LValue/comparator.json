@@ -1,0 +1,13 @@
+{
+    "challenge_module": "RiemannZeta.LValue.Challenge",
+    "solution_module": "RiemannZeta.LValue.Solution",
+    "theorem_names": [
+        "RiemannZeta.LValue.rz_58a_LFunction_chi5_one",
+        "RiemannZeta.LValue.rz_58b_chi5_kronecker",
+        "RiemannZeta.LValue.rz_58b_chi5_real_primitive_conductor",
+        "RiemannZeta.LValue.rz_58b_chi5_unique",
+        "RiemannZeta.LValue.rz_58c_value_approx"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": false
+}

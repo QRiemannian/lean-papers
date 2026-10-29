@@ -1,0 +1,68 @@
+# pinned output -- MS-N5b implementation B
+# started (date -u): 2026-10-28T22:40:15Z
+# interpreter: /opt/homebrew/bin/python3 -I (3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)])
+# mpmath: 1.3.0
+# command (from inside this folder): /opt/homebrew/bin/python3 -I compute.py
+# compute.py sha256: 1099c104cd4c214426c2dd139a313d1aecf99ba00fecd3709d89614d03182de8
+
+MS-N5b implementation B (theta/incomplete-gamma completed functions; argument-principle count; Illinois refinement)
+python 3.14.4, mpmath 1.3.0
+Floating-point reproduction, not a certified enclosure.
+
+Representation checks (40 digits):
+  zeta(2) vs pi^2/6                1.644934066848226436472415   1.644934066848226436472415   |diff| = 2.3e-41
+  L(2,chi5) vs 4 pi^2/(25 sqrt5)   0.7062114032597409699310032   0.7062114032597409699310032   |diff| = 0.0
+  L(1,chi5) vs 2 log(phi)/sqrt5    0.4304089409640040388894332   0.4304089409640040388894332   |diff| = 5.74e-42
+  Lambda_zeta(1/2) = -3.97696622551, Lambda_chi(1/2) = 0.943751437987 (nonzero: t = 0 is not a zero ordinate)
+  max |Im Lambda| on the line at t = 10, 25, 40 (should be 0): 0.0
+
+Argument principle on the box -1 <= Re s <= 2, -40 <= Im s <= 40 (30 digits):
+  xi (zeta)       winding = 12.0 -> 12 zeros in the box -> 6 with 0 < Im s <= 40 (conjugate symmetry); min |f| on boundary 2.19e-11; 340 evaluations; 2.7 s
+  Lambda_chi (L)  winding = 32.0 -> 32 zeros in the box -> 16 with 0 < Im s <= 40 (conjugate symmetry); min |f| on boundary 5.99e-14; 424 evaluations; 6.7 s
+
+Sign-change scan on s = 1/2 + it, 0 <= t <= 40, step 0.02 (30 digits):
+  xi (zeta)       6 sign changes (box count / 2 = 6): complete; f(40) = -2.65e-14; 15.6 s
+  Lambda_chi (L)  16 sign changes (box count / 2 = 16): complete; f(40) = 5.27e-14; 33.4 s
+
+Zero ordinates in 0 < t <= 40 (Illinois at 40 and 60 digits; max spread over all zeros = 3.61e-30):
+  xi (zeta):
+    14.13472514173469379046   (40-digit run: 14.13472514173469379046)
+    21.02203963877155499263   (40-digit run: 21.02203963877155499263)
+    25.01085758014568876321   (40-digit run: 25.01085758014568876321)
+    30.42487612585951321031   (40-digit run: 30.42487612585951321031)
+    32.93506158773918969066   (40-digit run: 32.93506158773918969066)
+    37.58617815882567125722   (40-digit run: 37.58617815882567125722)
+  Lambda_chi (L):
+    6.648453344727714716123   (40-digit run: 6.648453344727714716123)
+    9.831444432886669616348   (40-digit run: 9.831444432886669616348)
+    11.95884562608351453027   (40-digit run: 11.95884562608351453027)
+    16.03382112838423567459   (40-digit run: 16.03382112838423567459)
+    17.5669942923255552027   (40-digit run: 17.5669942923255552027)
+    19.54073262278475025038   (40-digit run: 19.54073262278475025038)
+    22.22740545445941091188   (40-digit run: 22.22740545445941091188)
+    24.58846621740819520766   (40-digit run: 24.58846621740819520766)
+    26.77609594800414011652   (40-digit run: 26.77609594800414011652)
+    28.46103510017752247519   (40-digit run: 28.46103510017752247519)
+    29.70790935048096556923   (40-digit run: 29.70790935048096556923)
+    33.00045600687051436795   (40-digit run: 33.00045600687051436795)
+    34.72881297890480867414   (40-digit run: 34.72881297890480867414)
+    35.8686383718122745946   (40-digit run: 35.8686383718122745946)
+    38.12918472143653185015   (40-digit run: 38.12918472143653185015)
+    39.56057294640318170506   (40-digit run: 39.56057294640318170506)
+
+Closest zeta/L pairs in the window (all 96 pairs ranked; first five):
+  gap 0.0653944191313   zeta 32.9350615877392   L 33.0004560068705
+  gap 0.422391362737   zeta 25.0108575801457   L 24.5884662174082
+  gap 0.543006562611   zeta 37.5861781588257   L 38.1291847214365
+  gap 0.716966775379   zeta 30.4248761258595   L 29.707909350481
+  gap 1.20536581569   zeta 21.0220396387716   L 22.2274054544594
+
+Comparison with the printed numerals (rule: round half-even at the printed third decimal):
+  closest-pair zeta ordinate   printed 32.935   computed 32.9350615877392   rounded 32.935   PASS
+  closest-pair L ordinate      printed 33.000   computed 33.0004560068705   rounded 33.000   PASS
+  closest pair over 0<=t<=40   gap 0.065394419 < next gap 0.42239136, zero lists complete by the argument principle   PASS
+
+Row verdict: PASS
+total runtime 75.3 s
+
+# finished (date -u): 2026-10-28T22:41:30Z

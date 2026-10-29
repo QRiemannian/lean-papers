@@ -1,0 +1,54 @@
+{
+  "clock": "2026-10-28T16:56:13Z",
+  "commit": "NOGIT",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_rev": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lake_build_seconds": 2.93,
+  "checks": [
+    {
+      "check": "lake_build",
+      "status": "PASS",
+      "detail": "exit 0 in 2.93s at leanprover/lean4:v4.33.0 / mathlib db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    {
+      "check": "no_sorry_no_axiom",
+      "status": "PASS",
+      "detail": "4 .lean files scanned"
+    },
+    {
+      "check": "axioms",
+      "status": "PASS",
+      "detail": "0 Solution module(s), 0 theorem(s), all within {propext Classical.choice Quot.sound}"
+    },
+    {
+      "check": "comparator",
+      "status": "PASS",
+      "detail": "0 unit(s) okay (landrun: /Users/qriemannian/Claude/projects/comparator/scripts/fake-landrun.sh)"
+    },
+    {
+      "check": "challenge_digest",
+      "status": "PASS",
+      "detail": "0 Challenge.lean digest(s) equal the signed statement_sha256"
+    },
+    {
+      "check": "retired_names",
+      "status": "PASS",
+      "detail": "0 hits for the four retired names"
+    }
+  ],
+  "axioms": [],
+  "challenge_digests": [],
+  "file_hashes": {
+    "./LeanPapers.lean": "78d5c53cf4163fc379c47a0e62465fb85829b999ea431e40069709ed6d496aed",
+    "./LeanPapers/Basic.lean": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4",
+    "./ModularSurface.lean": "048d59c735dcb47e355a6f9c4967b0cdb5e23edc425a38006140084f617e407c",
+    "./RiemannZeta.lean": "02b979ddd57ccecadce10c125d87770a1be73886311d30dc15d3d9fc63c69506",
+    "./formalization.yaml": "12dbc328b6b96a19eb37813f68dacbe81072d1f4879d2a139062a00437a50e82",
+    "./lake-manifest.json": "a070fb158b90dcb56d035723ccdf536e4bed7a12379cf94ff1edf22fee6f9bcc",
+    "./lakefile.toml": "482c52d09ab31a1d47aee87fae2ab356a6e19b8665e94cf5d108fff7ba1d6074",
+    "./lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "./tools/check.sh": "fd06f3e761059a4d569f5adab9c882257381c9bbf4df8e482f6a8d8646a7cf89",
+    "./tools/env.sh": "9c02acd5b4fbb0d5eed300be89e433f736081b175f3eed3db2186470656d050e"
+  },
+  "verdict": "PASS"
+}

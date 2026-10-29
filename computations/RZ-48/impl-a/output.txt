@@ -1,0 +1,34 @@
+# date -u: Wed Oct 28 20:28:30 UTC 2026
+# interpreter: Python 3.14.4 at /opt/homebrew/bin/python3, mpmath 1.3.0
+# command: cd /Users/qriemannian/Claude/projects/lean-papers/computations/RZ-48/impl-a && /opt/homebrew/bin/python3 -I compute.py
+
+RZ-48 implementation A  (mpmath 1.3.0)
+python 3.14.4
+
+Precision check (dps 50 vs dps 80):
+  gamma1 : |dps50 - dps80| = 5.7803e-57
+  phiL   : |dps50 - dps80| = 3.0661e-51
+  phiX   : |dps50 - dps80| = 3.7222e-51
+
+gamma_1 (findroot on Z(t), seed 14) = 14.13472514173469379045725198356247027078
+gamma_1 (mpmath.zetazero(1))        = 14.13472514173469379045725198356247027078
+  |zeta(rho_1)| = 3.9537e-51
+phi_Lambda(rho_1)  = (0.537601911401362343808987356824 - 0.843198781342573901118608322109j)
+  |phi_Lambda(rho_1)| = 1.0  (unitarity on Re s = 1/2)
+phi_xi(rho_1)      = (0.595838042028956614867076282716 - 0.803104618135831248930769901981j)
+  |phi_xi(rho_1)|     = 1.0
+phi_xi/phi_Lambda at rho_1 = (0.9975005055831384301292258 + 0.07065933315127745799302056j);  (s-1)/s at rho_1 = (0.9975005055831384301292258 + 0.07065933315127745799302056j)
+  |difference| = 5.0114e-52
+first pole s = rho_1/2 = (0.25 + 7.06736257086734689522862599178j)
+  1/phi_Lambda(rho_1/2) = Lambda(rho_1)/Lambda(rho_1 - 1): |.| = 4.8436e-51
+
+Printed numerals (rule: rounding at the printed number of significant digits):
+  phi(rho_1), Lambda convention, real part      computed    0.537601911401362343809 | printed             0.537602 (6 s.d.) | PASS
+  phi(rho_1), Lambda convention, imag part      computed  -0.8431987813425739011186 | printed            -0.843199 (6 s.d.) | PASS
+  first pole, real part                         computed                       0.25 | printed                 0.25 (2 s.d.) | PASS
+  first pole, imag part                         computed    7.067362570867346895229 | printed   7.0673625708673469 (17 s.d.) | PASS
+  phi(rho_1), xi convention, real part          computed   0.5958380420289566148671 | printed             0.595838 (6 s.d.) | PASS
+  phi(rho_1), xi convention, imag part          computed  -0.8031046181358312489308 | printed            -0.803105 (6 s.d.) | PASS
+
+SUMMARY: 6/6 items PASS; ROW PASS
+runtime: 0.080 s
